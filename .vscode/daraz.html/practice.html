@@ -1,0 +1,2060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/39920dfae7.js" crossorigin="anonymous"></script>
+    <title>Online Shopping in Pakistan: Fashion, Electronics &amp; Groceries - Daraz.pk</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: var(--search-bgcolor);
+
+        }
+
+        :root {
+            --light-grey: #ececec;
+            --orange: #f57224;
+            --search-bgcolor: #f5f5f5;
+            --footer: #2e2e54;
+            --last: #f1f1f1;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 3;
+            height: 100px;
+            width: 100%;
+            color: #212121;
+            box-shadow:  1px 1px 16px 1px rgb(219, 219, 219);
+        }
+
+        .font {
+            font-family: Roboto-Regular, 'Helvetica Neue', Helvetica, Tahoma, Arial, Sans-serif;
+        }
+
+        .wrap {
+            background-color: var(--light-grey);
+
+        }
+
+        .nav-1 {
+            margin: 0px 2% 0px 80.5px;
+            display: flex;
+            justify-content: end;
+            white-space: nowrap;
+        }
+
+        .grey {
+            cursor: pointer;
+            padding: 0 1.3%;
+            line-height: 25px;
+            text-decoration: none;
+            color: #212121;
+            text-transform: uppercase;
+            font-size: 0.9vw;
+            text-size-adjust: 100%;
+        }
+
+        .nav-2 {
+            background-color: white;
+            height: 65px;
+            padding-top: 11px;
+            text-size-adjust: 100%;
+        }
+
+        .wrap-1 {
+            height: 48.797px;
+            background-color: white;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        #logo {
+            height: 41px;
+            width: 100%;
+           
+        }
+
+        .logoo {
+            width: 13%;
+            margin-right: 7%;
+            display: flex;
+            justify-content: end;
+            margin-left: 2%;
+        }
+
+        .contain input {
+            border: 0;
+            outline: 0;
+        }
+
+        .contain {
+            display: flex;
+            width: 52.5vw;
+            height: 100%;
+            border-radius: 2px;
+        }
+
+        .search-2 {
+            font-size: 14px;
+            background-color: var(--orange);
+            width: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+
+        }
+
+        .field {
+            width: 100%;
+            height: 100%;
+            padding-left: 19px;
+            font-size: 14px;
+            background-color: var(--search-bgcolor);
+            line-height: 45px;
+        }
+        .l-img{
+            width: 14%;
+            height:100%;
+            margin-left: 3%;
+            padding-right: 2%;
+        }
+        .l-img1{
+            width:100%;
+            height:100%;
+
+        }
+      
+      
+         
+
+        .cart {
+            width: 36px;
+            height: 38px;
+            margin-left: 1%;
+            align-self: center;
+        }
+
+        .main {
+            display: flex;
+            width: 100%;
+            height: 21.5rem;
+            justify-content: end;
+            animation: horizon 90s -10ms infinite;
+
+        }
+
+        .side {
+            background-color: white;
+            text-decoration: none;
+            list-style-type: none;
+            width: 15vw;
+            z-index: 2;
+        }
+        
+        li {
+            color: rgb(117, 117, 117);
+            font-size: 1vw;
+            line-height: 1.7rem;
+            cursor: pointer;
+            padding-left: 8px;
+        }
+        ul {
+            list-style-type: none;
+         }
+
+        .slider {
+            transform: translateX(-0.3%);
+            overflow: hidden;
+            width: 72%;
+            margin-right: 5%;
+        z-index: 1;
+        }
+
+        .i {
+            width: 100%;
+            height: 100%;
+        }
+        .imgs{
+            animation: slide 90s -10ms infinite;
+            
+        }
+        @keyframes slide{
+            0%{
+           transform: translateX(0%);
+            }
+            11%{
+           transform: translateX(0%);
+            }
+            11.0000001%{
+          transform: translateX(-100%);
+                
+            }
+            21%{
+          transform: translateX(-100%);
+                
+            }
+            21.0000001%{
+          transform: translateX(-200%);
+            }
+            31%{
+          transform: translateX(-200%);
+                
+            }
+
+            31.0000001%{
+          transform: translateX(-300%);
+                
+            }
+            41%{
+          transform: translateX(-300%);
+                
+            }
+            41.0000001%{
+          transform: translateX(-400%);
+                
+            }
+            51%{
+          transform: translateX(-400%);
+                
+            }
+            51.0000001%{
+          transform: translateX(-500%);
+                
+            }
+            61%{
+          transform: translateX(-500%);
+                
+            }
+            61.0000001%{
+          transform: translateX(-600%);
+                
+            }
+            71%{
+          transform: translateX(-600%);    
+            }
+            71.0000001%{
+          transform: translateX(-700%);
+                
+            }
+            81%{
+          transform: translateX(-700%);
+                
+            }
+            81.0000001%{
+          transform: translateX(-800%);  
+            }
+            91%{
+          transform: translateX(-800%);  
+            }
+            /* 91.5%{
+          transform: translateX(-900%);  
+            } */
+            100%{
+          transform: translateX(-800%);  
+            }
+        }
+        @keyframes horizon{
+            0%{
+                background-color: rgb(1, 109, 167);
+            }
+            11%{
+                background-color: rgb(1, 109, 167);
+            }
+            11.0000001%{
+                background-color: rgb(218, 203, 218);
+            }
+            21%{
+                background-color: rgb(218, 203, 218);
+            }
+            21.0000001%{
+                background-color:rgb(234, 166, 101);
+            }
+            31%{
+                background-color:rgb(234, 166, 101);
+            }
+
+            31.0000001%{
+                background-color: rgb(179, 2, 1);
+                
+            }
+            41%{
+                background-color: rgb(179, 2, 1);
+                
+            }
+            41.0000001%{
+                background-color: rgb(177, 255, 250);
+            }
+            51%{
+                background-color: rgb(177, 255, 250);
+                
+            }
+            51.0000001%{
+                background-color: rgb(254, 200, 255);
+            }
+            61%{
+                background-color: rgb(254, 200, 255);
+                
+            }
+            61.0000001%{
+                background-color: rgb(165, 37, 158);
+            }
+            71%{
+                background-color: rgb(165, 37, 158);
+
+            }
+            71.0000001%{
+                background-color: rgb(112, 58, 177);
+            }
+            81%{
+                background-color: rgb(112, 58, 177);
+                
+            }
+            81.0000001%{
+                background-color:rgb(229, 214, 210);
+            }
+            91%{
+                background-color:rgb(229, 214, 210);
+
+            }
+            
+            100%{
+                background-color: rgb(229, 214, 210);
+
+            }
+        }
+
+        .ad {
+            width: 100%;
+            background-color: var(--search-bgcolor);
+        }
+
+        .ad-1 {
+            display: flex;
+            justify-content: end;
+            padding-top: 2%;
+            margin-right: 5%;
+            background-color: var(--search-bgcolor);
+        }
+
+        .category {
+            display: flex;
+            justify-content: end;
+            padding-top: 2%;
+            width: 95%;
+            background-color: var(--search-bgcolor);
+            margin-left: 2%;
+        }
+
+        .all {
+            width: 17.8%;
+            background-color: white;
+            height: 6.5vh;
+            margin-right: 1.5%;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .bind {
+            width: 13%;
+            height: auto;
+            margin: 2%;
+            padding-top: 1%;
+        }
+
+        .all1 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .text {
+            font-size: 1.2vw;
+            color: black;
+            margin-top: 2px;
+            margin-left: 1%;
+        }
+
+        .shop {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 5.6%;
+            margin-right: 3.5%;
+            margin-top: 4%;
+            background-color: var(--search-bgcolor);
+            width: 90%;
+            margin-bottom: 1%;
+        }
+
+        .on {
+            width: 100%;
+            height: fit-content;
+        }
+
+        .mall {
+            width: 90%;
+            margin-left: 5.6%;
+            margin-right: 3.5%;
+        }
+
+        .box {
+            width: 16%;
+            height: max-content;
+            background-color: white;
+            padding-bottom: 1%;
+        }
+
+        .inbox {
+            width: 100%;
+            height: 50%;
+            position: relative;
+        }
+
+        .box-1 {
+            width: 100%;
+            height: auto;
+        }
+
+        .inbox1 {
+            width: 3%;
+            height: 3%;
+            position: absolute;
+            margin-left: 5%;
+            transform: translateY(-200%);
+        }
+
+        .box2 {
+            width: 100%;
+            height: auto;
+            border: 5px solid white;
+            box-shadow: 1px 1px 1px gray;
+            position: fixed;
+    
+        }
+
+        .card {
+            margin-top: 20%;
+            position: relative;
+            margin-left: 24%;
+            font-size: 1.3vw;
+        }
+
+        .stores {
+            position: relative;
+            color: rgb(158, 158, 158);
+            font-size: 0.9vw;
+            margin-left: 24.5%;
+            padding-top: 1.1%;
+        }
+
+        .card1 {
+            font-size: 1vw;
+            color: black;
+            margin-left: 7%;
+            margin-top: 20%;
+            line-height: 120%;
+        }
+
+        .orange1 {
+            color: var(--orange);
+            margin-left: 7%;
+            margin-top: 3%;
+            font-size: 1.1vw;
+        }
+
+        .stores1 {
+            color: rgb(158, 158, 158);
+            font-size: 0.8vw;
+            margin-left: 7%;
+        }
+        
+        .stores11 {
+            text-decoration-line: line-through;
+        }
+        
+        .stores12 {
+            margin-left: 2%;
+        }
+        
+        .stars {
+            display: flex;
+            color: rgb(250, 202, 81);
+            margin-top: 5%;
+            margin-left: 7%;
+        }
+        
+        .fa-solid {
+            font-size: 60%;
+        }
+        
+        .load1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+        }
+
+        .load {
+            color: var(--orange);
+            border: 1px solid var(--orange);
+            width: 33%;
+            padding-top: 0.8%;
+            padding-bottom: 0.8%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-size: 0.9vw;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .partial {
+            background-color: var(--footer);
+            width: 100%;
+            height: fit-content;
+            margin-top: 1%;
+        }
+
+        .partial1 {
+            display: flex;
+            width: 100%;
+            padding-top: 1%;
+        }
+
+        .one {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            color: white;
+            margin-left: 5.4%;
+            margin-right: 8.5%;
+        }
+
+        .two {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            color: white;
+            padding-top: 2%;
+        }
+
+        .partial li {
+            font-size: 0.9vw;
+            color: white;
+            line-height: 150%;
+            white-space: nowrap;
+
+        }
+
+        .partial h3 {
+            font-size: 1.2vw;
+            font-weight: 540;
+            padding-left: 3.5%;
+            padding-bottom: 5%;
+            white-space: nowrap;
+        }
+
+        .one li:hover,
+        .two li:hover,
+        .one h3:hover,
+        .two h3:hover {
+            text-decoration: underline;
+        }
+
+        .three {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            margin-left: 11.5%;
+        }
+
+        .code {
+            display: flex;
+            flex-direction: column;
+            margin-left: 3%;
+            justify-content: end;
+            height: 100%;
+        }
+
+        .qr {
+            width: 15%;
+            height: 100%;
+            display: flex;
+        }
+
+        .qimage {
+            width: 100%;
+            border-radius: 10px;
+            height: 100%;
+        }
+
+        .dlogo {
+            width: 45%;
+            height: 40%;
+        }
+
+        .dlogo img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .qtext {
+            font-size: 0.8vw;
+            font-weight: bold;
+        }
+
+        .c {
+            color: var(--orange);
+            margin-top: 1%;
+
+        }
+
+        .c1 {
+            color: white;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        .wrapp {
+            display: flex;
+        }
+
+        .apps {
+            display: flex;
+            width: 100%;
+            height: 20%;
+            margin-top: 5%;
+            margin-bottom: 20%;
+        }
+
+        .b {
+            border: 0.5px solid rgb(169, 168, 168);
+            border-radius: 3px;
+            height: 63%;
+            width: 18%;
+            margin-right: 2%;
+
+        }
+
+        .methods {
+            background-color: white;
+            display: flex;
+            padding-top: 2%;
+            width: 100%;
+        }
+
+        .n {
+            background-position: 0 45%;
+            overflow: hidden;
+            width: 18.5%;
+            height: 71.5%;
+            margin-left: 1%;
+            background-repeat: no-repeat;
+            object-fit: cover;
+
+        }
+
+        .o {
+
+            width: 21%;
+            height: 66%;
+            margin-left: 1%;
+            border: 1px solid rgb(166, 165, 165);
+            border-radius: 5px;
+        }
+
+        .o img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+
+        }
+
+        .pay {
+            width: 22%;
+            margin-left: 5.6%;
+        }
+
+        .cash {
+            background-repeat: no-repeat;
+            padding-bottom: 14.5%;
+            overflow: hidden;
+            height: 0;
+        }
+
+        .sprite1 {
+            background-position: 62% -0.5%;
+            background-size: 530%;
+
+        }
+
+        .sprite2 {
+            background-position: 22% 84%;
+            background-size: 535%;
+
+        }
+
+        .sprite3 {
+            background-position: 45% 84%;
+            background-size: 535%;
+        }
+
+        .sprite4 {
+            background-position: 62% 37.5%;
+            background-size: 530%;
+        }
+
+        .spritepay2 {
+            margin-top: 5%;
+        }
+
+        .sprite5 {
+            background-position: -0.7% 65%;
+            background-size: 535%;
+            margin-right: 6%;
+        }
+
+        .sprite6 {
+            background-position: 22% 65%;
+            background-size: 535%;
+        }
+
+        .inter {
+            margin-left: 3%;
+            width: 20%;
+            margin-right: 5.5%;
+        }
+
+        .inter1 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4%;
+
+        }
+
+        .sprite7 {
+            background-position: 57% 99.5%;
+            background-size: 800%;
+        }
+
+        .sprite8 {
+            background-position: -2% 99.5%;
+            background-size: 800%;
+        }
+
+        .sprite9 {
+            background-position: 12.5% 99.5%;
+            background-size: 800%;
+        }
+
+        .sprite10 {
+            background-position: 27.5% 99.5%;
+            background-size: 800%;
+        }
+
+        .sprite11 {
+            background-position: 43% 99.5%;
+            background-size: 800%;
+        }
+
+        .follow {
+            width: 18%;
+            margin-right: 6%;
+        }
+
+        .follow1 {
+            display: flex;
+            margin-top: 4%;
+            justify-content: space-between;
+        }
+
+        .sprite12 {
+            background-position: 99.5% 66.5%;
+            background-size: 800%;
+        }
+
+        .sprite13 {
+            background-position: 99.5% 50%;
+            background-size: 800%;
+        }
+
+        .sprite14 {
+            background-position: 99.5% 16.7%;
+            background-size: 800%;
+        }
+
+        .sprite15 {
+            background-position: 63% 63%;
+            background-size: 800%;
+        }
+
+        .sprite16 {
+            background-position: 100% 83.7%;
+            background-size: 800%;
+        }
+
+        .verify {
+            width: 14%;
+            margin-right: 2%;
+        }
+
+        .sprite17 {
+            background-repeat: no-repeat;
+            padding-bottom: 33%;
+            overflow: hidden;
+            height: 0;
+            background-size: 200%;
+            background-position: 0 0;
+            width: 85%;
+        }
+
+        .verify1 {
+            margin-top: 6%;
+        }
+
+        .text2 {
+            font-size: 1.1vw;
+            font-weight: 300;
+        }
+
+        .descrip {
+            width: 100%;
+            background-color: var(--search-bgcolor);
+        }
+
+        .space {
+            margin-top: 3%;
+            display: flex;
+        }
+
+        .size1 {
+            color: rgb(136, 136, 136);
+            font-size: 0.8vw;
+         line-height: 150%;
+
+        }
+        .fcolor{
+         color:   rgb(96, 96, 96);
+
+        }
+        .fcolor1{
+         color:   rgb(96, 96, 96);
+         font-weight: 200;
+         font-size: 1.2vw;
+         line-height: 160%;
+        }
+        .skip1{
+            width: 12%;
+            background-color: white;
+            height: 7%;
+            position: fixed;
+            bottom: 0px;
+            display: flex;
+            align-items: center;
+            box-shadow:  0px 2px 0px 1px rgb(209, 208, 208);
+            border:none;
+            cursor: pointer;
+        }
+        .skip{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 62%;
+            margin-left: 10%;
+        }
+        @media screen and (max-width:984px) {
+            .main {
+            display: flex;
+            width: 100%;
+            height: 18rem;
+            justify-content: end;
+            animation: horizon 90s -10ms infinite;
+
+        }
+        .side {
+            background-color: white;
+            text-decoration: none;
+            list-style-type: none;
+            width: 17vw;
+            z-index: 2;
+        }
+        
+        li {
+            color: rgb(117, 117, 117);
+            font-size: 1.2vw;
+            line-height: 1.4rem;
+            cursor: pointer;
+            padding-left: 8px;
+            .slider {
+            overflow: hidden;
+            width: 75%;
+            margin-right: 2%;
+        }
+        }}
+        @media screen and (max-width:786px){
+            .main {
+            display: flex;
+            width: 100%;
+            height: 15.5rem;
+            justify-content: end;
+            animation: horizon 90s -10ms infinite;
+
+        }
+
+        .side {
+            background-color: white;
+            text-decoration: none;
+            list-style-type: none;
+            width: 19vw;
+        }
+        
+        li {
+            color: rgb(117, 117, 117);
+            font-size: 1.3vw;
+            line-height: 1.2rem;
+            cursor: pointer;
+            padding-left: 8px;
+        }
+        .slider {
+            overflow: hidden;
+            width: 78%;
+            margin-right: 1%;
+            transform: translateX(-0.5%);
+z-index: 1;
+        }
+    }
+    @media screen and (max-width:680px) and (min-width:0px){
+            .main {
+            display: flex;
+            width: 100%;
+            height: 13rem;
+            justify-content: end;
+            animation: horizon 90s -10ms infinite;
+
+        }
+        
+        .side {
+            background-color: white;
+            text-decoration: none;
+            list-style-type: none;
+            width: 20vw;
+            z-index: 2;
+        }
+        
+        li {
+            color: rgb(117, 117, 117);
+            font-size: 1.3vw;
+            line-height: 1rem;
+            cursor: pointer;
+            padding-left: 8px;
+        }
+        .slider {
+            overflow: hidden;
+            width: 78%;
+            margin-right: 1%;
+            transform: translateX(-0.5%);
+            z-index: 1;
+        }
+    }
+           @media screen and (max-width:1110px){
+           
+           .nav-2 {
+               background-color: white;
+               height: 56px;
+               padding-top: 8px;
+               text-size-adjust: 100%;
+           }
+           .wrap-1 {
+               height: 40px;
+               background-color: white;
+               margin: 0 auto;
+               display: flex;
+           }
+           #logo {
+               height: 38px;
+               width: 100%;
+              
+           }
+           .contain {
+               display: flex;
+               width: 52.5vw;
+               height: 100%;
+               border-radius: 2px;
+           }
+           .l-img{
+               width: 15%;
+               height:100%;
+               margin-left: 3%;
+               padding-right: 2%;
+           }
+           
+           nav {
+               position: sticky;
+               top: 0;
+               z-index: 2;
+               height: 90px;
+               width: 100%;
+               color: #212121;
+               box-shadow:  1px 1px 16px 1px rgb(219, 219, 219);
+            z-index: 3;
+
+           }
+           .cart {
+            width: 31px;
+            height: 33px;
+            margin-left: 1%;
+            align-self: center;
+            
+        }
+          
+           } 
+           @media screen and (max-width:852px){
+           
+           .nav-2 {
+               background-color: white;
+               height: 54px;
+               padding-top: 8px;
+               text-size-adjust: 100%;
+           }
+           .wrap-1 {
+               height: 40px;
+               background-color: white;
+               margin: 0 auto;
+               display: flex;
+           }
+           #logo {
+               height: 38px;
+               width: 100%;
+              
+           }
+           .contain {
+               display: flex;
+               width: 52.5vw;
+               height: 100%;
+               border-radius: 2px;
+           }
+           .l-img{
+               width: 17%;
+               height:100%;
+               margin-left: 3%;
+               /* padding-right: 2%; */
+           }
+           
+           nav {
+               position: sticky;
+               top: 0;
+               z-index: 2;
+               height: 88px;
+               width: 100%;
+               color: #212121;
+               box-shadow:  1px 1px 16px 1px rgb(219, 219, 219);
+            z-index: 3;
+
+           }
+          
+           }
+    @media screen and (max-width:680px){
+
+           .nav-2 {
+               background-color: white;
+               height: 53px;
+               padding-top: 5px;
+               text-size-adjust: 100%;
+           }
+           .wrap-1 {
+               height: 37px;
+               background-color: white;
+               margin: 0 auto;
+               display: flex;
+           }
+           #logo {
+               height: 38px;
+               width: 100%;
+              
+           }
+           .contain {
+               display: flex;
+               width: 52.5vw;
+               height: 90%;
+               border-radius: 2px;
+               margin-top: 1%;
+           }
+           .l-img{
+               width: 15%;
+               height:90%;
+               margin-top: 1%;
+               /* margin-left: 3%; */
+               padding-right: 2%;
+           }
+           
+           nav {
+               position: sticky;
+               top: 0;
+               z-index: 2;
+               height: 84.5px;
+               width: 100%;
+               color: #212121;
+               box-shadow:  1px 1px 16px 1px rgb(219, 219, 219);
+            z-index: 3;
+
+    }
+}
+    @media screen and (max-width:1046px){
+        .stores1 {
+            color: rgb(158, 158, 158);
+            font-size: 1vw;
+            margin-left: 7%;
+        }
+        .fa-solid {
+            font-size: 45%;
+        }
+       
+    }
+    @media screen and (max-width:862px){
+        .stores1 {
+            color: rgb(158, 158, 158);
+            font-size: 1vw;
+            margin-left: 7%;
+        }
+        .fa-solid {
+            font-size: 40%;
+        }
+       
+
+    }
+    @media screen and (max-width:762px){
+        .stores1 {
+            color: rgb(158, 158, 158);
+            font-size: 1vw;
+            margin-left: 7%;
+        }
+        .fa-solid {
+            font-size: 20%;
+        }
+       
+
+    }
+    @media screen and (max-width:677px){
+
+    .cart {
+            width: 28px;
+            height: 30px;
+            margin-left: 1%;
+            align-self: center;
+            margin-top: 2%;
+            
+        }}
+          .in1:hover{
+                color: var(--orange);
+                text-decoration: underline;
+          }
+          .in1:selected{
+                color: var(--orange);
+                text-decoration: underline;
+          }
+          @media screen and (max-width:884px) {
+            .inbox1 {
+            width: 3%;
+            height: 3%;
+            position: absolute;
+            margin-left: 5%;
+            transform: translateY(-150%);
+        }
+        .card {
+            margin-top: 30%;
+            position: relative;
+            margin-left: 24%;
+            font-size: 1.3vw;
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="wrap font">
+            <div class="nav-1 font">
+                <span class="grey">Save more on app</span>
+                <a class="grey in1" href="https://affiliatee-43760.web.app" target="_blank">Daraz Affiliate Program</a>
+                <a class="grey" href="">Sell on Daraz</a>
+                <span class="grey">CUSTOMER CARE</span>
+                <span class="grey">Track my Order</span>
+                <a class="grey in1" href="https://login2-40637.web.app/" target="_blank">login</a>
+                <a class="grey in1" href="https://signup-b2493.web.app" target="_blank">Signup</a>
+                <span class="grey">زبان تبدیل کریں</span>
+            </div>
+        </div>
+        <div class="nav-2">
+            <div class="wrap-1">
+                <div class="logoo">
+                    <a href="">
+                        <img id="logo" src="https://dl.dropbox.com/s/si10nfr22b8sfbv/Daraz%20New%20Logo%20Vector.svg"
+                            alt="Daraz"></a>
+                </div>
+                <div class="contain">
+                    <input class="field" type="text" placeholder="Search in Daraz"></input>
+
+                    <div class="search-2"> <svg class="path-1" fill="white" viewBox="0 0 23 23" width="2em" height="2em"
+                            class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xlup9mm x1kky2od">
+                            <g fill-rule="evenodd" transform="translate(-448 -544)">
+                                <g fill-rule="nonzero">
+                                    <path
+                                        d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z"
+                                        transform="translate(452 547)"></path>
+                                    <path
+                                        d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z"
+                                        transform="translate(452 547)"></path>
+                                    <path
+                                        d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z"
+                                        transform="translate(452 547)"></path>
+                                    <path
+                                        d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z"
+                                        transform="translate(452 547)"></path>
+                                </g>
+                            </g>
+                        </svg></div>
+                </div>
+
+                <div class="cart">
+                    <svg viewBox="0 0 40 35" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>cart</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs>
+                            <polyline id="path-1" points="0 0.00306976744 24.7219388 0.00306976744 24.7219388 22 0 22">
+                            </polyline>
+                            <polyline id="path-3" points="0 0.00306976744 24.7219388 0.00306976744 24.7219388 22 0 22">
+                            </polyline>
+                        </defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="cart">
+                                <g id="icon-cart">
+                                    <path
+                                        d="M0,0.00312093023 L0,2.04963256 L3.26734694,2.04963256 L7.77397959,15.2665163 L23.1602041,15.2665163 L24.7214286,4.61749302 L5.75561224,3.02070233 L4.72602041,0.00312093023 L0,0.00312093023 Z M6.47653061,5.13526047 L22.3872449,6.47470233 L21.397449,13.2200047 L9.23265306,13.2200047 L6.47653061,5.13526047 Z"
+                                        id="Fill-1" fill="#212121" fill-rule="nonzero" transform="translate(7 8)">
+                                    </path>
+                                    <g id="Group-8">
+                                        <g id="Group-4">
+                                            <g id="Fill-2-Clipped">
+                                                <mask id="mask-2" fill="white">
+                                                    <use xlink:href="#path-1"></use>
+                                                </mask>
+                                                <g id="path-1"></g>
+                                                <path
+                                                    d="M10.9269388,19.8042465 C10.9269388,21.0168047 9.94683673,22.0001535 8.73714286,22.0001535 C7.52795918,22.0001535 6.54785714,21.0168047 6.54785714,19.8042465 C6.54785714,18.5916884 7.52795918,17.6083395 8.73714286,17.6083395 C9.94683673,17.6083395 10.9269388,18.5916884 10.9269388,19.8042465"
+                                                    id="Fill-2" fill="#212121" fill-rule="nonzero" mask="url(#mask-2)"
+                                                    transform="translate(7 8)"></path>
+                                            </g>
+                                        </g>
+                                        <g id="Group-7">
+                                            <g id="Fill-5-Clipped">
+                                                <mask id="mask-4" fill="white">
+                                                    <use xlink:href="#path-3"></use>
+                                                </mask>
+                                                <g id="path-3"></g>
+                                                <path
+                                                    d="M24.3623469,19.8042465 C24.3623469,21.0168047 23.3822449,22.0001535 22.172551,22.0001535 C20.9633673,22.0001535 19.9832653,21.0168047 19.9832653,19.8042465 C19.9832653,18.5916884 20.9633673,17.6083395 22.172551,17.6083395 C23.3822449,17.6083395 24.3623469,18.5916884 24.3623469,19.8042465"
+                                                    id="Fill-5" fill="#212121" fill-rule="nonzero" mask="url(#mask-4)"
+                                                    transform="translate(7 8)"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="l-img">
+                    <img class="l-img1" 
+                        src="https://icms-image.slatic.net/images/ims-web/7a379e2e-4b65-4617-9188-94e0c768cd9d.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main">
+            <div class="side">
+                <ul class="list font">
+                    <li class="lzd-site-menu-root-item" style="padding-top: 9px;">
+                        <a><span>Groceries &amp; Pets</span></a>
+                    </li>
+                    <li class="lzd-site-menu-root-item" id="Level_1_Category_No4">
+                        <a class=""><span>Health &amp; Beauty</span></a>
+                    </li>
+                    <li class="lzd-site-menu-root-item" id="Level_1_Category_No9">
+                        <a class=""><span>Men's Fashion</span></a>
+                    </li>
+                    <li class="lzd-site-menu-root-item" id="Level_1_Category_No8">
+                        <a><span>Women's Fashion</span></a>
+                    </li>
+                    <li class="lzd-site-menu-root-item" id="Level_1_Category_No5">
+                        <a><span>Mother &amp; Baby</span></a>
+                    </li>
+                    <li class="lzd-site-menu-root-item" id="Level_1_Category_No7">
+                        <a><span>Home &amp; Lifestyle</span></a>
+                    </li>
+                    <li class="lzd-site-menu-root-item" id="Level_1_Category_No1">
+                        <a><span>Electronic Devices</span></a>
+                    </li>
+                    <li class="lzd-site-menu-root-item" id="Level_1_Category_No2">
+                        <a><span>Electronic Accessories</span></a>
+                    </li>
+                    <li class="lzd-site-menu-root-item" id="Level_1_Category_No3">
+                        <a><span>TV &amp; Home Appliances</span></a>
+                    </li>
+                    <li class="lzd-site-menu-root-item" id="Level_1_Category_No11">
+                        <a><span>Sports &amp; Outdoor</span></a>
+                    </li>
+                    <li class="lzd-site-menu-root-item" id="Level_1_Category_No10">
+                        <a><span>Watches, Bags &amp; Jewellery</span></a>
+                    </li>
+                    <li class="lzd-site-menu-root-item" id="Level_1_Category_No12">
+                        <a><span>Automotive &amp; Motorbike</span></a>
+                    </li>
+
+                </ul> 
+            </div>
+            <div class="slider" style="overflow: hidden;">
+                <div class="imgs" style="width: 101%;height: 100%;display: flex;">
+                <img class="i"
+                    src="https://icms-image.slatic.net/images/ims-web/df6f758b-23a7-40fb-8584-0bcd304fb139.jpg">
+                    <img class="i"
+                    src="https://icms-image.slatic.net/images/ims-web/6e774d4d-ad9b-437c-90f2-fe1fa4df6227.jpg">
+                    <img class="i"
+                    src="https://icms-image.slatic.net/images/ims-web/beefbe27-763c-473e-ae07-33778f0a4d51.jpg">
+                    <img class="i"
+                    src="https://icms-image.slatic.net/images/ims-web/14d5717f-1752-4a50-b8d9-973f587edd63.jpg_1200x1200.jpg">
+                    <img class="i"
+                    src="https://icms-image.slatic.net/images/ims-web/837d8c4f-1034-48cd-b0c5-ae1b373c76a1.jpg">
+                    <img class="i"
+                    src="https://icms-image.slatic.net/images/ims-web/fd57dd11-8a77-4f82-9b5e-2e3dc7998d78.jpg">
+                    <img class="i"
+                    src="https://icms-image.slatic.net/images/ims-web/d0a26a39-9400-4de7-b1a8-63396866b47d.jpg">
+                    <img class="i"
+                    src="https://icms-image.slatic.net/images/ims-web/6cd1d1e5-f2c6-4323-ac6c-bca686e3135c.jpg">
+                    <img class="i" src="https://icms-image.slatic.net/images/ims-web/f405ecda-d255-4708-b7f6-e0b67725332e.jpg">
+                 </div>
+               
+            </div>
+        </div>
+        <div class="on">
+            <div class="ad">
+                <div class="ad-1">
+                    <img style="width: 93.5%;height: auto;"
+                        src="	https://gcp-img.slatic.net/lazada/347b54ce-bd1d-49f0-b66e-e7debebfdb92_PK-1188-176.jpg"
+                        alt="">
+                </div>
+
+                <div class="category">
+                    <div class="mart all">
+                        <div class="bind">
+                            <img class="all1"
+                                src="https://icms-image.slatic.net/images/ims-web/dd27eb9b-9dae-4bf9-ba1e-dd6eef36b678.png"
+                                alt="">
+                        </div>
+                        <div class="text font">Mart</div>
+                    </div>
+                    <div class="women all">
+                        <div class="bind">
+                            <img class="all1"
+                                src="https://icms-image.slatic.net/images/ims-web/6e350341-48f5-486d-901b-364543edd43a.png"
+                                alt="">
+                        </div>
+                        <div class="text font">Women's Fashion</div>
+                    </div>
+                    <div class="men all">
+                        <div class="bind">
+                            <img class="all1"
+                                src="	https://icms-image.slatic.net/images/ims-web/350ba4ba-7f90-47c6-a90b-0458bd3e5809.png"
+                                alt="">
+                        </div>
+                        <div class="text font">Men's Fashion</div>
+                    </div>
+                    <div class="beauty all">
+                        <div class="bind">
+                            <img class="all1"
+                                src="https://icms-image.slatic.net/images/ims-web/0ed92f69-d596-458b-bcd6-8d2bb69ef911.png"
+                                alt="">
+                        </div>
+                        <div class="text font">Beauty</div>
+                    </div>
+                    <div class="decor all">
+                        <div class="bind">
+                            <img class="all1"
+                                src="https://icms-image.slatic.net/images/ims-web/d85f0ced-6459-455a-8504-150655bf948c.png"
+                                alt="">
+                        </div>
+                        <div class="text font">Home & Decor</div>
+                    </div>
+                </div>
+            </div>
+            <div class="shop">
+                <h3 class="font" style="color:black;font-weight: 400;font-size: 1.5vw;">DarazMall</h3>
+                <a href="#" style="display: flex;align-items: center;text-decoration: none;">
+                    <span class="font" style="color: rgb(248, 86, 6);font-size: 0.9vw;">SHOP MORE</span>
+                    <svg fill="rgb(248, 86, 6)" viewBox="0 0 28 28" width="1em" height="0.7em">
+                        <path
+                            d="M9.209 5.207 16 12l-6.791 6.793a1 1 0 1 0 1.415 1.414l7.5-7.5a1 1 0 0 0 0-1.414l-7.5-7.5a1 1 0 1 0-1.415 1.414z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="mall font" style="display: flex;justify-content: space-between;">
+                <div class="box">
+                    <div class="inbox">
+                        <img class="box-1" src="https://static-01.daraz.pk/p/ee74bea0828dc49cd189e9aec2757ff5.jpg"
+                            alt="">
+                    </div>
+                    <div class="inbox1">
+                        <img class="box2"
+                            src="https://static-01.daraz.pk/other/shop/ebc0513bfbad519ce3edb1f6ae4dcdff.jpeg" alt="">
+                    </div>
+                    <div class="card" style="margin-left: 20%;"> Gold Tree Millers </div>
+                    <div>
+                        <p class="stores" style="margin-left: 27%;"> Gold Tree Millers </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inbox">
+                        <img class="box-1" src="https://static-01.daraz.pk/p/b739d7de484bfe6abd9fdc181d4d70ff.jpg"
+                            alt="">
+                    </div>
+                    <div class="inbox1">
+                        <img class="box2"
+                            src="	https://static-01.daraz.pk/other/shop/a3b28a9b60e8d09dca12a460624ea18e.jpeg" alt="">
+                    </div>
+                    <div class="card" style="margin-left: 20%;">Salon Designers</div>
+                    <div>
+                        <p class="stores" style="margin-left: 28%;">Salon Designers</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inbox">
+                        <img class="box-1" src="https://static-01.daraz.pk/p/1df60bedba663e70c4c5077dfbd6ccd4.jpg"
+                            alt="">
+                    </div>
+                    <div class="inbox1">
+                        <img class="box2"
+                            src="https://static-01.daraz.pk/other/shop/f63957e5fd059166b5658b7720097313.jpeg" alt="">
+                    </div>
+                    <div class="card" style="margin-left: 30%;">Hontinga</div>
+                    <div style="margin-left: 15%;">
+                        <p class="stores">Hontinga</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inbox">
+                        <img class="box-1" src="	https://static-01.daraz.pk/p/19c45e0df0894e5fe6154731691a9981.jpg"
+                            alt="">
+                    </div>
+                    <div class="inbox1">
+                        <img class="box2"
+                            src="https://static-01.daraz.pk/other/shop/67eb5f0fb1192554fcec47ffd8b3020b.png" alt="">
+                    </div>
+                    <div class="card" style="margin-left: 25%;">Sourceco.pk</div>
+                    <div>
+                        <p class="stores" style="margin-left: 32%;">Sourceco.pk</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inbox">
+                        <img class="box-1" src="https://static-01.daraz.pk/p/cf9ea224d9d2252d75931b18d42acc52.jpg"
+                            alt="">
+                    </div>
+                    <div class="inbox1">
+                        <img class="box2"
+                            src="https://static-01.daraz.pk/other/shop/fcf6b5f47f9f20dcbca934e05de82ddd.jpeg" alt="">
+                    </div>
+                    <div class="card" style="margin-left: 27%;">SKIN-CARE</div>
+                    <div>
+                        <p class="stores" style="margin-left: 35%;">SKIN-CARE</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inbox">
+                        <img class="box-1" src="https://static-01.daraz.pk/p/b907852b342c2d1ca383fffc8a7b43d7.jpg"
+                            alt="">
+                    </div>
+                    <div class="inbox1">
+                        <img class="box2"
+                            src="https://static-01.daraz.pk/other/shop/9dae5ae068bc97725f243e00e0942d74.jpeg" alt="">
+                    </div>
+                    <div class="card" style="margin-left: 15%;">Enacolor Jewelery</div>
+                    <div>
+                        <p class="stores" style="margin-left: 27%;">Enacolor Jewelery</p>
+                    </div>
+                </div>
+
+            </div>
+            <h3 class="font" style="color:black;font-weight: 400;font-size: 1.5vw;margin-left: 6%;margin-top: 3%;">Just
+                For You</h3>
+            <div class="mall font" style="display: flex;justify-content: space-between;margin-top: 1%;">
+                <div class="box">
+                    <div class="inbox">
+                        <img class="box-1"
+                            src="https://static-01.daraz.pk/p/c86aa1b6e74712c05113c150a01a4f79.jpg_200x200q80-product.jpg_.webp"
+                            alt="">
+                    </div>
+                    <div class="card1">Adjustable Hand Grip 5-60kg <br>Hand Strengthner</div>
+                    <div class="orange1">Rs.898</div>
+                    <div>
+                        <div class="inline stores1"><span class="stores11">Rs.1,850 </span>
+                            <span class="stores12">-51%</span>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star fa-sm"></i>
+                        <i class="fa-solid fa-star fa-sm"></i><i class="fa-solid fa-star fa-sm"></i><i
+                            class="fa-solid fa-star fa-sm"></i>
+                        <i class="fa-solid fa-star-half fa-xs"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inbox">
+                        <img class="box-1"
+                            src="https://static-01.daraz.pk/p/6ff699afc2f8c009f2f3ea4834b84867.jpg_200x200q80-product.jpg_.webp"
+                            alt="">
+                    </div>
+
+                    <div class="card1">2L Portable Large Capacity <br>Water Bottles Fitness Water...</div>
+                    <div class="orange1">Rs.2,039</div>
+                    <div>
+                        <div class="inline stores1"><span class="stores11">Rs.2,807</span>
+                            <span class="stores12">-27%</span>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star fa-sm"></i>
+                        <i class="fa-solid fa-star fa-sm"></i><i class="fa-solid fa-star fa-sm"></i><i
+                            class="fa-solid fa-star fa-sm"></i>
+                        <i class="fa-solid fa-star-half fa-xs"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inbox">
+                        <img class="box-1"
+                            src="https://static-01.daraz.pk/p/8d0ada941e43600336693b289219652e.png_200x200q80-product.jpg_.webp"
+                            alt="">
+                    </div>
+
+                    <div class="card1">TRIMUX PROFESSIONAL t9<br> DRAGON STYLE TRIMMER</div>
+                    <div class="orange1">Rs.899</div>
+                    <div>
+                        <div class="inline stores1"><span class="stores11">Rs.2000 </span>
+                            <span class="stores12">-55%</span>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star fa-sm"></i>
+                        <i class="fa-solid fa-star fa-sm"></i><i class="fa-solid fa-star fa-sm"></i><i
+                            class="fa-solid fa-star fa-sm"></i>
+                        <i class="fa-solid fa-star-half fa-xs"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inbox">
+                        <img class="box-1"
+                            src="https://static-01.daraz.pk/p/659e55ac82357c334a39fe9ae247180e.jpg_200x200q80-product.jpg_.webp"
+                            alt="">
+                    </div>
+
+                    <div class="card1">Black/Silver/Golden Stainless<br> Steel Eagle Locket/Pendant..</div>
+                    <div class="orange1">Rs.199</div>
+                    <div>
+                        <div class="inline stores1"><span class="stores11">Rs.400 </span>
+                            <span class="stores12">-50%</span>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star fa-sm"></i>
+                        <i class="fa-solid fa-star fa-sm"></i><i class="fa-solid fa-star fa-sm"></i><i
+                            class="fa-solid fa-star fa-sm"></i>
+                        <i class="fa-solid fa-star-half fa-xs"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inbox">
+                        <img class="box-1"
+                            src="https://static-01.daraz.pk/p/687db865e309194560eb214fc546048b.jpg_200x200q80-product.jpg_.webp"
+                            alt="">
+                    </div>
+
+                    <div class="card1">M90 Pro TWS Earbuds<br> Bluetooth 5.2 Headphones...</div>
+                    <div class="orange1">Rs.1449</div>
+                    <div>
+                        <div class="inline stores1"><span class="stores11">Rs.2,450 </span>
+                            <span class="stores12">-41%</span>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star fa-sm"></i>
+                        <i class="fa-solid fa-star fa-sm"></i><i class="fa-solid fa-star fa-sm"></i><i
+                            class="fa-solid fa-star fa-sm"></i>
+                        <i class="fa-solid fa-star-half fa-xs"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inbox">
+                        <img class="box-1"
+                            src="https://static-01.daraz.pk/p/fbbfe7109d343b9913db86059a932c60.png_200x200q80-product.jpg_.webp"
+                            alt="">
+                    </div>
+
+                    <div class="card1">Outdoor FHD PTZ IP<br> Wireless Security Camera...</div>
+                    <div class="orange1">Rs.898</div>
+                    <div>
+                        <div class="inline stores1"><span class="stores11">Rs.1,850 </span>
+                            <span class="stores12">-51%</span>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star fa-sm"></i>
+                        <i class="fa-solid fa-star fa-sm"></i><i class="fa-solid fa-star fa-sm"></i><i
+                            class="fa-solid fa-star fa-sm"></i>
+                        <i class="fa-solid fa-star-half fa-xs"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="mall load1">
+                <div class="load font">
+                    Load More
+                </div>
+            </div>
+            <div class="partial font">
+                <div class="partial1">
+                    <div class="one">
+                        <h3>Customer Care</h3>
+                        <ul>
+                            <li>Help Center</li>
+                            <li>How to Buy</span>
+                            <li>Corporate & Bulk Purchasing</li>
+                            <li>Returns & Refunds</li>
+                            <li>Daraz Shop</li>
+                            <li>Contact Us</li>
+                            <li>Purchase Protection</li>
+                            <li>Daraz Pick up Points</li>
+                            <h3 style="padding-top: 16%;">Make Money With Us</h3>
+                            <li>Daraz University</li>
+                            <li>Sell on Daraz</li>
+                            <li>Join Daraz Affiliate Program</li>
+                        </ul>
+                    </div>
+                    <div class="two">
+                        <h3>Daraz</h3>
+                        <li>About Us</li>
+                        <li>Digital Payments</li>
+                        <li>Daraz Donates</li>
+                        <li>Daraz Blog</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>NTN Number : 4012118-6</li>
+                        <li>STRN Number : 1700401211818</li>
+                        <li>Online Shopping App</li>
+                        <li>Online Grocery Shopping</li>
+                        <li>Daraz Exclusive</li>
+                        <li>How to shop on Daraz</li>
+                    </div>
+                    <div class="three">
+                        <div class="wrapp">
+                            <div class="qr">
+                                <img class="qimage"
+                                    src="https://laz-img-cdn.alicdn.com/images/ims-web/TB18aqePBLoK1RjSZFuXXXn0XXa.png"
+                                    alt="">
+                            </div>
+                            <div class="code">
+                                <div class="dlogo"> <img
+                                        src="	https://icms-image.slatic.net/images/ims-web/9bef0e70-2a7c-48b7-91cb-59c5c83c5b46.png"
+                                        alt=""></div>
+                                <div class="qtext c">Happy Shopping</div>
+                                <div class="qtext c1">Download App</div>
+                            </div>
+                        </div>
+                        <div class="apps">
+                            <div class="o"><img
+                                    src="https://dl.dropbox.com/s/bmnobk968dp77f1/Available_on_the_App_Store_logo-700x207.png"
+                                    alt="">
+
+                            </div>
+                            <div class="o"><img
+                                    src="https://dl.dropbox.com/s/dm3r92ca7o5a83z/png-transparent-google-play-logo-google-play-computer-icons-app-store-google-text-logo-sign-thumbnail~3.png"
+                                    alt="">
+                            </div>
+                            <div class="o"><img
+                                    src="https://dl.dropbox.com/s/r8xddkztfmw0wq2/-11596476536ddbuahw6nl~2.png" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="methods">
+                <div class="pay">
+                    <h3 class="text2 font">Payment Methods</h3>
+                    <div class="pay1"
+                        style="display: flex;padding-bottom: 1%;justify-content: space-between;margin-top: 4%;">
+                        <div class="sprite1 cash"
+                            style="background-image: url('https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png');width: 20%;">
+                            &nbsp;</div>
+                        <div class="sprite2 cash"
+                            style="background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png);width: 20%;">
+                            &nbsp;</div>
+                        <div class="sprite3 cash"
+                            style="background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png);width: 20%;">
+                            &nbsp;</div>
+                        <div class="sprite4 cash"
+                            style="background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png);width: 20%;">
+                            &nbsp;</div>
+
+                    </div>
+                    <div class="spritepay2" style="display: flex;">
+                        <div class="sprite5 cash"
+                            style="background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png);width: 20%;">
+                            &nbsp;</div>
+                        <div class="sprite6 cash"
+                            style="background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png);width: 20%;">
+                            &nbsp;</div>
+                    </div>
+                    <div style="margin:10% 0%;">
+                        <h3 class="font text2">© Daraz 2023</h3>
+                    </div>
+                </div>
+                <div class="inter">
+                    <h3 class="text2 font">Daraz International</h3>
+                    <div class="inter1">
+
+                        <div class="sprite7 cash"
+                            style="background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png);width: 17%;">
+                            &nbsp;</div>
+                        <div class="sprite8 cash"
+                            style="background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png);width: 17%;">
+                            &nbsp;</div>
+                        <div class="sprite9 cash"
+                            style="background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png);width: 17%;">
+                            &nbsp;</div>
+                        <div class="sprite10 cash"
+                            style="background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png);width: 17%;">
+                            &nbsp;</div>
+                        <div class="sprite11 cash"
+                            style="background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png);width: 17%;">
+                            &nbsp;</div>
+
+
+                    </div>
+                </div>
+
+                <div class="follow">
+                    <h3 class="text2 font">Follow Us</h3>
+
+                    <div class="follow1">
+
+                        <div class="sprite12 cash"
+                            style="background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png);width: 17%;">
+                            &nbsp;</div>
+                        <div class="sprite13 cash"
+                            style="background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png);width: 17%;">
+                            &nbsp;</div>
+                        <div class="sprite14 cash"
+                            style="background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png);width: 17%;">
+                            &nbsp;</div>
+                        <div class="sprite15 cash"
+                            style="background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png);width: 17%;">
+                            &nbsp;</div>
+                        <div class="sprite16 cash"
+                            style="background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png);width: 17%;">
+                            &nbsp;</div>
+
+                    </div>
+                </div>
+
+                <div class="verify">
+                    <h3 class="text2 font">Verified by</h3>
+                    <div class="verify1">
+                        <div class="sprite17"
+                            style="background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01hv7zNR1xFCmh1jQ4C_!!6000000006413-2-tps-317-281.png);">
+                            &nbsp;</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="descrip">
+                <div class="space mall font">
+                    <div class="desc1" style="margin-right:6%;width: 60%;">
+                        <h1 class="title fcolor fcolor1" style="margin-bottom: 8%;">How Daraz Transformed Online Shopping in Pakistan</h1>
+                       <div class="size1"> Daraz first made waves in Pakistan’s e-commerce market after its introduction in 2012. We
+                        have since grown to become Pakistan’s largest platform for online shopping with a network spread
+                        across Asia in Pakistan, Bangladesh, Sri Lanka, Myanmar, and Daraz.com.np. Our vision was to
+                        provide a safe, efficient online marketplace platform for vendors and customers across the
+                        country to come together. We started off exclusively as an online fashion retail platform and
+                        over the years expanded to become a complete one-stop solution for all your buying needs. Daraz
+                        prides itself on not being just another ecommerce venture in Asia. We work tirelessly to make
+                        sure that we provide users with the best online online shopping experience and value for their
+                        purchases. Whether you shop online through our website or our online shopping mobile App, you
+                        can expect easy navigation, customized recommendations, and a smooth online shopping experience
+                        guaranteed.
+                    </div>
+                       <h2 class="title fcolor1" style="margin-top: 5%;margin-bottom: 10%;font-size:1vw ;"> What Makes Us Different from Other Online Shopping Platforms?
+                    </h2>
+                      <div class="size1" style="margin-bottom: 5%;"> 
+                        <b style="font-weight:600;white-space: nowrap;color: rgb(136, 136, 136);">Select from the Largest Online Marketplace in Pakistan</b>
+                        
+                        Select from the Largest Online Marketplace in Pakistan
+                        With over 15 million products to select from, Daraz offers its customers the most comprehensive
+                        listing of products in the country. Whether you’re looking for electronics, apparel, appliances,
+                        or groceries – there is something for everyone.</div>
+
+
+                      <div class="size1" style="margin-bottom: 5%;"> 
+                        <b style="font-weight:600;white-space: nowrap;color: rgb(136, 136, 136);">Hassle Free Delivery</b><br>
+
+                        Online shopping is only as good as its execution and Daraz promises hassle free delivery right
+                        from the moment you order to when your package is dropped at your door. We cater to both major
+                        and smaller cities alike, and give you the choice to track your package as it makes its way to
+                        you so you always know your order status. If you are unsatisfied with any aspect of your order,
+                        we have a simple 7-day return or exchange policy.</div>
+                        <div class="size1" style="margin-bottom: 5%;"> 
+                            <b style="font-weight:600;white-space: nowrap;color: rgb(136, 136, 136);"> Payment Options to Suit Every Style</b><br>
+
+                        You can choose to pay through a credit/debit card, opt for cash on delivery or even go for EMI
+                        (easy monthly instalments). You can also avail exclusive offers by downloading Daraz Wallet – a
+                        closed loop digital wallet</div>
+                    </div>
+                    <div class="desc2" style="margin-right:6%;width: 60%;">
+                        <div class="size1">
+                        that offers you a secure, easy way to make payments. We also have easypaisa & jazzcash payment
+                        method for our customers' ease</div>
+            <div class="size1" style="margin-top: 5%;">
+                        <b style="font-weight:600;white-space: nowrap;color: rgb(136, 136, 136);">Shop from Verified Vendors</b><br>
+
+                        Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is
+                        why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified
+                        vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never
+                        have to second guess authenticity because Daraz makes sure to do it for you!</div>
+                        
+            <div class="size1" style="margin-top: 5%;">
+                        <b style="font-weight:600;white-space: nowrap;color: rgb(136, 136, 136);">Shop Around the World with Daraz Global Collection</b><br>
+
+                        International sellers and local convenience come together with Daraz Global collection. Get the
+                        chance to shop online from vendors around the world without leaving the Daraz website. Featuring
+                        thousands of novelty gadgets and accessories, Daraz Global Collection offers you a selection of
+                        products that you won’t find anywhere else when you’re online shopping in Pakistan.</div>
+            <div class="size1" style="margin-top: 5%;">
+                        <b style="font-weight:600;white-space: nowrap;color: rgb(136, 136, 136);"> Avail Exclusive Discounts, Offers, and Promotions</b><br>
+
+                        Online shopping with Daraz means you get the chance to avail exclusive online-only promotional
+                        packages as well as discount vouchers from our vendors when you shop from their pages. Our flash
+                        sales give you customized product offers all curated with the help of our advanced AI technology
+                        so you always have deals you’ll actually be interested in!</div>
+            <div class="size1" style="margin-top: 5%;">
+                        <b style="font-weight:600;white-space: nowrap;color: rgb(136, 136, 136);">Buy Value, not Just Goods with Daraz Care</b><br>
+
+                        Daraz does not just cater online shopping in Pakistan but also aims to simplify the way you give
+                        back to society. With charities spanning across sectors of education, health care, environmental
+                        preservation, and shelters, you can choose to make a big difference with a few, simple clicks.
+                        </div>
+            <div class="size1" style="margin-top: 5%;"> 
+                        <b style="font-weight:600;white-space: nowrap;color: rgb(136, 136, 136);margin-top: 5%;">Simplify Corporate Purchases</b><br>
+
+                        Who says corporate purchases need to be a complicated affair? When you opt for Daraz Corporate,
+                        you get an efficient and transparent solution for your business’ bulk purchasing needs. We’re
+                        proud to be working with some of the most prestigious organizations in Pakistan across a number
+                        of different industries.</div>
+                    </div>
+                    <div class="desc3" style="margin-right:6%;margin-right:6%;width: 60%;">
+                        <div class="size1">
+                        <h1 class="title fcolor fcolor1" style="margin-bottom: 3%;">Top Categories & Brands
+                            </h1>
+                            <h4 class="drz-footer-title-small">
+              
+                                <a style="color:rgb(51, 51, 51);text-decoration: none;font-size: 0.9vw;font-weight: 300;" href="//www.daraz.pk/smartphones/?scm=1003.4.icms-zebra-5029545-2833178.OTHER_6500306155_2485553">Mobile Phones in Pakistan</a>
+                              
+                            </h4>
+                        Apple iPhones, Honor Mobiles, Huawei Mobiles, Tecno Mobiles, Redmi Mobiles, Xiaomi Mi Mobiles,
+                        Nokia Mobiles, OnePlus Mobiles, Oppo Mobile Phones, Realme Mobiles, Samsung Mobile Phones, Vivo
+                        Mobile Phones, Mobile Accessories, Smart Watches</div>
+                        <div class="size1" style="margin-top: 5%;">
+
+                        <h4 class="drz-footer-title-small">
+              
+                            <a style="color:rgb(51, 51, 51);text-decoration: none;font-size: 0.9vw;font-weight: 300;" href="//www.daraz.pk/smartphones/?scm=1003.4.icms-zebra-5029545-2833178.OTHER_6500306155_2485553">
+                                LATEST LAPTOP</a>
+                          
+                        </h4>
+                       
+                        Dell Laptops, HP Laptops, Lenovo Laptops, Mouse, Gaming Graphic Cards, lenovo ideapad 3, Macbook
+                        Pro 13, Hp Probook 650 G2</div>
+                        <div class="size1" style="margin-top: 5%;">
+                            <h4 class="drz-footer-title-small">
+              
+                                <a style="color:rgb(51, 51, 51);text-decoration: none;font-size: 0.9vw;font-weight: 300;" href="//www.daraz.pk/smartphones/?scm=1003.4.icms-zebra-5029545-2833178.OTHER_6500306155_2485553">
+                                    LED TV</a>
+                              
+                            </h4>
+
+                        
+                        Changhong Led Tv, LG Led Tv, Samsung Led Tv, Sony Led Tv, TCL LED TVs</div>
+                            <div class="size1" style="margin-top: 5%;">
+                                <h4 class="drz-footer-title-small">
+                  
+                                    <a style="color:rgb(51, 51, 51);text-decoration: none;font-size: 0.9vw;font-weight: 300;" href="//www.daraz.pk/smartphones/?scm=1003.4.icms-zebra-5029545-2833178.OTHER_6500306155_2485553">
+                                        HOME APPLIANCES</a>
+                                  
+                                </h4>
+                       
+                        Microwave oven, Geyser, Heater, Refrigerators, Deep Freezers, Generators, Water Dispensers,
+                        Fans, Room Cooler, Table Fans, Wall Fans, Exhaust Fans, Pedestal Fans, Window Ac, Solar Panel,
+                        Washing Machine</div>
+                            <div class="size1" style="margin-top: 5%;">
+                                <h4 class="drz-footer-title-small">
+                  
+                                    <a style="color:rgb(51, 51, 51);text-decoration: none;font-size: 0.9vw;font-weight: 300;" href="//www.daraz.pk/smartphones/?scm=1003.4.icms-zebra-5029545-2833178.OTHER_6500306155_2485553">
+                                        DSLR CAMERAS</a>
+                                  
+                                </h4>
+                        
+                        Camera Tripods, Drones, IP & CCTV Cameras, Nikon D7000, Nikon D5600, Canon 200D, Canon 1200D,
+                        Fujifilm Instax Mini 11, Canon M50</div>
+                            <div class="size1" style="margin-top: 5%;">
+                                <h4 class="drz-footer-title-small">
+                  
+                                    <a style="color:rgb(51, 51, 51);text-decoration: none;font-size: 0.9vw;font-weight: 300;" href="//www.daraz.pk/smartphones/?scm=1003.4.icms-zebra-5029545-2833178.OTHER_6500306155_2485553">
+                                        HEALTH & BEAUTY</a>
+                                  
+                                </h4>
+                        
+                        sunisa foundation, Biofad, janssen facial kit, Glutathione Injection, Glutathione Cream Sauvage,
+                        Glutathione Tablets, Glutathione Soap, Infrared Thermometers, N95 Mask</div>
+
+                        <div class="size1" style="margin-top: 5%;">
+                                <h4 class="drz-footer-title-small">
+                  
+                                    <a style="color:rgb(51, 51, 51);text-decoration: none;font-size: 0.9vw;font-weight: 300;" href="//www.daraz.pk/smartphones/?scm=1003.4.icms-zebra-5029545-2833178.OTHER_6500306155_2485553">
+                                        TRENDING </a>
+                                  
+                                </h4>
+                       
+                        June Shopping Expo 2023, Azaadi Sale 2022, Shopping Expo, 11 11 Sale, 12.12 Sale, Live Cricket
+                        Streaming, Online Bills, Core I5 Laptop, Gtx 1060, Samsung A32, Samsung A51, Samsung A52,
+                        Samsung A71, Samsung A72, Samsung M31, Samsung S20, Samsung S20 Ultra 5G, Samsung S21, Samsung
+                        S21 Ultra, Samsung Z Flip, Tecno Camon 17, Tecno Spark 6, Vivo V20, Poco X3 Pro, Vivo V21, Vivo
+                        V21E, Vivo X70 Pro, Vivo Y12, Vivo Y12S, Vivo Y1S, Vivo Y20, Vivo Y51, Vivo Y51S, Oppo F19 Pro,
+                        Oppo Reno 6, Xiaomi Poco F3, Xiaomi Poco M3, Xiaomi Poco X3, Xiaomi Poco X3 Gt, Xiaomi Redmi 9C,
+                        Xiaomi Redmi Note 10 Pro, Sharp Aquos R2</div>
+                            <div class="size1" style="margin-top: 3%;">
+                                <h4 class="drz-footer-title-small">
+                  
+                                    <a style="color:rgb(51, 51, 51);text-decoration: none;font-size: 0.9vw;font-weight: 300;" href="//www.daraz.pk/smartphones/?scm=1003.4.icms-zebra-5029545-2833178.OTHER_6500306155_2485553">
+                                        SHOP WORLDWIDE WITH LAZADA</a>
+                                  
+                                </h4>
+                        Singapore, Malaysia, Philipines, Indonesia, Vietnam, Thailand</div>
+                        <div style="margin-top: 5%;">
+                        <a href="#" style="text-decoration: none;font-size: 0.9vw;color: #199cb7;">See more links</a></div>
+                    </div>
+
+
+
+                    <div class="desc4" style="width: 60%;">
+                        <div class="size1">
+                                <h4 class="drz-footer-title-small">
+                  
+                                    <a style="color:rgb(51, 51, 51);text-decoration: none;font-size: 0.9vw;font-weight: 300;" href="#">WOMEN'S FASHION</a>
+                                  
+                                </h4>
+                                Al-Karam Studio, Warda, Salitex, 
+                                Bonanza Satrangi, Edenrobe, Firdous, 
+                                Junaid Jamshed, Limelight, Sana Safinaz, Mahru,
+                                 Pushup Bra, Women Undergarments</div>
+                            <div class="size1" style="margin-top: 5%;">
+    
+                            <h4 class="drz-footer-title-small">
+                  
+                                <a style="color:rgb(51, 51, 51);text-decoration: none;font-size: 0.9vw;font-weight: 300;" href="#">
+                                    MEN'S FASHION</a>
+                              
+                            </h4>
+                           
+                            Men's Shirts, Men's T-Shirts</div>
+                            <div class="size1" style="margin-top: 5%;">
+                                <h4 class="drz-footer-title-small">
+                  
+                                    <a style="color:rgb(51, 51, 51);text-decoration: none;font-size: 0.9vw;font-weight: 300;" href="//www.daraz.pk/smartphones/?scm=1003.4.icms-zebra-5029545-2833178.OTHER_6500306155_2485553">
+                                        ONLINE GROCERY STORE
+                                    </a>
+                                  
+                                </h4>
+    
+                                Oil & Ghee, Basmati Rice, Dried Fruits, Chocolates, Mattresses
+                            </div>
+                                <div class="size1" style="margin-top: 5%;">
+                                    <h4 class="drz-footer-title-small">
+                      
+                                        <a style="color:rgb(51, 51, 51);text-decoration: none;font-size: 0.9vw;font-weight: 300;" href="//www.daraz.pk/smartphones/?scm=1003.4.icms-zebra-5029545-2833178.OTHER_6500306155_2485553">
+                                            ONLINE BOOK STORE</a>
+                                      
+                                    </h4>
+                           
+                                    English Books, Islamic Books, History Books, English Literature Books, Kids Urdu Stories, Pride & Prejudice, Harry Potter Story Books, Namal Novel, Nimra Ahmed Novels</div>
+                                <div class="size1" style="margin-top: 5%;">
+                                    <h4 class="drz-footer-title-small">
+                      
+                                        <a style="color:rgb(51, 51, 51);text-decoration: none;font-size: 0.9vw;font-weight: 300;" href="//www.daraz.pk/smartphones/?scm=1003.4.icms-zebra-5029545-2833178.OTHER_6500306155_2485553">
+                                            USED CARS FOR SALE
+                                         </a>
+                                      
+                                    </h4>
+                            
+                                    Suzuki Wagon R, KIA Sportage, Honda City, Toyota Prado, Suzuki Alto, Suzuki Cultus, Honda Civic, Honda 125, Honda 70, Yamaha Ybr 125, Hi Speed 150, Hi Speed Freedom 200, Metro 70, Super Power 125, Monster JMS 3500 Electric Bike, Super Power 70, Car Accessories
+                                </div>
+                                <div class="size1" style="margin-top: 5%;">
+                                    <h4 class="drz-footer-title-small">
+                      
+                                        <a style="color:rgb(51, 51, 51);text-decoration: none;font-size: 0.9vw;font-weight: 300;" href="//www.daraz.pk/smartphones/?scm=1003.4.icms-zebra-5029545-2833178.OTHER_6500306155_2485553">
+                                            AIR CONDITIONERS</a>
+                                      
+                                    </h4>
+                            
+                                    Kenwood Ac, Haier Ac, Gree Ac, Dawlance Ac, Orient Ac, Ecostar Ac, Inverex Solar Ac, Pel Ac</div>
+    
+                            <div class="size1" style="margin-top: 5%;">
+                                    <h4 class="drz-footer-title-small">
+                      
+                                        <a style="color:rgb(51, 51, 51);text-decoration: none;font-size: 0.9vw;font-weight: 300;" href="//www.daraz.pk/smartphones/?scm=1003.4.icms-zebra-5029545-2833178.OTHER_6500306155_2485553">
+                                            TOP MOBILE PHONES </a>
+                                      
+                                    </h4>
+                           
+                                    Nokia G20, redmi 9, realme 7 pro, realme c15, realme c21, vivo y20s, realme c11 Price in Pakistan, itel vision 1 pro price in pakistan, samsung galaxy a02 price in pakistan, Infinix Hot 10, Infinix Hot 8, Infinix Hot 9, Infinix Note 10 Pro, Infinix Note 7, Infinix Note 8, Infinix Zero 8, Inifnix Smart 5, iPhone 11, iPhone 12, iphone 12 Pro Max, iPhone 12 Pro, iPhone 6, Itel A25, Mi 10T, Nokia 105, Oppo A15, Oppo A15S, Oppo A53, Oppo A54, Infinix Zero X Pro, Infinix Zero X Neo, Oppo F19, Oppo Reno 5, Oppo Reno 5 Pro, Xiaomi Poco M3 Pro, Realme 6 Pro, Realme 8, Realme Narzo 30A, Samsung A02S, Samsung A11, Samsung A12, Samsung A31, Vivo Y33s, Infinix Note 11, Tecno Spark 6 Go, Samsung A52s, Samsung Tab A7 Lite, Oppo Reno 6 Pro</div>
+                                <div class="size1" style="margin-top: 3%;">
+                                    <h4 class="drz-footer-title-small">
+                      
+                                        <a style="color:rgb(51, 51, 51);text-decoration: none;font-size: 0.9vw;font-weight: 300;" href="//www.daraz.pk/smartphones/?scm=1003.4.icms-zebra-5029545-2833178.OTHER_6500306155_2485553">
+                                            MEDICINE</a>
+                                      
+                                    </h4>
+                                    surbex z, tea tree oil, hydrozole cream, biotin tablets, evion capsule, lactogen 1, minoxidil, clobevate cream, centrum silver, maxdif cream, dermovate cream, cac 1000, Panadol Migraine</div>
+                           
+                                    <button class="skip1">
+                                        <div class="skip">
+                                            <svg width="18" height="18" viewBox="0 0 19 19"><path fill="rgb(4, 66, 84)" d="M19.043 3.805c.134 0 .256.025.368.077.11.053.21.123.3.212.089.074.159.17.211.289A.946.946 0 0120 4.76V19l-3.805-3.805H5.761a.93.93 0 01-.378-.077.77.77 0 01-.289-.212.77.77 0 01-.212-.289.93.93 0 01-.077-.378v-1.891h12.347V3.805h1.891zM15.24 9.5a.89.89 0 01-.267.667c-.09.09-.193.16-.311.212a.893.893 0 01-.356.078h-9.5L1 14.239V.957c0-.134.027-.256.078-.368.052-.11.122-.21.212-.3.089-.089.188-.159.3-.211A.866.866 0 011.956 0h12.348c.118 0 .237.027.356.078.118.052.222.122.31.212a.89.89 0 01.268.667V9.5z" fill="#9E9E9E" mask="url(#icon-messages_svg__mask-2)" transform="translate(-1)" fill-rule="evenodd"></path></svg>
+                                            <div class="im" style="color: rgb(4, 66, 84);font-family: Arial;font-size: 1.2vw;">Messages</div>
+                                        </div></button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</body>
+
+</html> 
