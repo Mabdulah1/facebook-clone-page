@@ -5,1551 +5,1111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Tutorial</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="preload" href="/lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin>
     <script src="https://kit.fontawesome.com/39920dfae7.js" crossorigin="anonymous"></script>
-    
-    <link rel="shortcut icon" href="https://dl.dropbox.com/s/uvqxmc68y9ks6mr/favicon.ico" type="image/x-icon">
-
-    <link rel="icon" href="https://dl.dropbox.com/s/uvqxmc68y9ks6mr/favicon.ico" type="image/x-icon">    
+    <title>Facebook</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
-
         * {
             margin: 0;
             padding: 0;
-           
         }
 
         body {
-            line-height: 1.5;
+            background-color: #f0f2f5;
         }
 
-        .inawar {
-            position: relative;
-            z-index: 3;
-            font-size: 18px;
+        :root {
+            --color-fill: rgb(24, 119, 242);
+        }
+
+        .fil-color {
+            fill: var(--color-fill);
+        }
+
+        .fb-logo {
+            margin-left: 16px;
+            padding: 15px 1% 15px 1%;
+        }
+
+        header {
             background-color: white;
-            color: #282A35;
-            padding-left: 12px;
-            padding-right: 16px;
-            font-family: 'Source Sans Pro', sans-serif;
+            height: 56px;
             display: flex;
-            justify-content: space-between;
-        }
-
-        .charge{
-            width: 44px;
-            padding: 16px 16px 16px 16px;
-        }
-
-        .pain:hover: {
-            /* fill: #04AA6D; */
-            fill: #126a4a;
-            transition-timing-function: linear;
-        }
-
-        .haaaaa {
-            padding: 28px 16px 28px 16px;
-            font-size: 20px;
-            position: relative;
-            top: -28px;
-            font-size: 18px;
-            font-family: 'Source Sans Pro', sans-serif;
-            text-decoration: none;
-            color: black;
-        }
-
-        .haaaaa:hover {
-            background-color: #04AA6D !important;
-            color: white !important;
-
-        }
-
-        .focuskaro{
-            width: 70px;
-            background-color: white;
-            color: black;
-            padding: 8px 16px;
-            position: relative;
-            z-index: 0;
-            border-radius: 25px;
-            text-decoration: none;
-            text-align: right;
-            color: black;
-            line-height: 27px;
-            background-color: rgb(217, 238, 225);
-            cursor: pointer;
-        }
-
-        .h:hover {
-            background-color: #059862 !important;
-            color: white !important;
-        }
-
-        .tu {
-            border-radius: 25px;
-            margin-right: 15px;
-            color: black;
-            background-color: rgb(255, 192, 199);
-        }
-
-        .tu:hover {
-            background-color: #ffb3bb !important;
-            color: black !important;
-        }
-
-          .hongay{
-            border-radius: 25px;
-            margin-right: 15px;
-            width: auto;
-            background-color: rgb(151, 99, 246);
-            color: #fff;
-            line-height: 27px;
-        }
-
-        .hongay:hover {
-            background-color: #7d53cc !important;
-            color: #fff !important;
-        }
-
-        .nam {
-            width: auto;
-            border-radius: 25px;
-            margin-right: 15px;
-            color : black;
-            background-color: rgb(255, 244, 163);
-        }
-
-        .nam:hover {
-            background-color: #fff080 !important;
-            color: black !important;
-        }
-
-        .sign {
-            width: 93px;
-            border-radius: 25px;
-           
-            color: black;
-
-        }
-
-        .log {
-            width: 60px;
-            border-radius: 25px;
-            /* transform: translateX(32px); */
-            margin-right: -35px;
-            position: relative;
-            z-index: 2;
-            color: white;
-            background-color: rgb(4, 170, 109);
-        }
-
-        .log:hover {
-            background-color: #059862 !important;
-            color: white !important;
-        }
-
-         .badnam{
-            padding: 8px 16px;
-            text-decoration: none;
-            text-align: center;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 18px;
-            line-height: 1.5;
-            cursor: pointer;
-            white-space: nowrap;
-        }
-
-        .jaldiwahasyhato {
-            display: flex;
-            justify-content: center;
             align-items: center;
-            /* position: relative; */
-        }
-
-        .fa-regular {
-            font-weight: bold;
-            width: 50px !important;
-            font-size: 17px !important;
-            padding-top: 12px !important;
-            padding-bottom: 14px !important;
-            text-align: center;
-            color: white;
-        }
-
-        .fa-sharp {
-            font-weight: bold;
-            width: 50px !important;
-            font-size: 17px !important;
-            padding-top: 12px !important;
-            padding-bottom: 14px !important;
-            color: white;
-            text-align: center;
-        }
-
-        .naa{
-            width: 100%;
-            /* overflow: hidden; */
-            height: 44px;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 17px;
-            letter-spacing: 1px;
-            background-color: #282A35;
-            position: sticky;
-            z-index: 10;
+            position: fixed;
             top: 0;
+            width: 100%;
+            z-index: 100;
         }
 
-        .z {
-            /* vertical-align: center; */
-            color: #f1f1f1;
-            text-decoration: none;
-            padding: 10px 14px 9px 14px !important;
-            text-align: center;
+        .contain input {
+            border: 0;
+            outline: 0;
         }
 
-        .fa-home {
-            font-size: 22px !important;
-            width: 25px !important;
-            padding-top: 11px !important;
+        .contain {
+            width: 60%;
+            margin-bottom: 15px;
+            padding-left: 21%;
         }
 
-        .html {
-          
-            color: #ffffff !important;
-            width: auto;
-        }
-
-        .hj {
-            float: right !important;
-        }
-
-       
-
-        .op {
-            background-color: #E7E9EB;
-            height: 100%;
-            width: 220px;
-            padding-bottom: 42%;
-            overflow-x: hidden;
-            overflow-y: scroll;
-            position: sticky;
-            /* top: 0; */
-            display: block;
-        }
-
-
-        .ho {
-            padding-left: 220px;
+        .search {
             position: relative;
+            width: 55%;
+            height: 25px;
+            border-top-left-radius: 40px;
         }
 
-      
-        .oyeeee {
-            line-height: 22.5px;
-            font-family: "Segoe UI", Arial, sans-serif;
-            text-decoration: none;
-            display: block;
-            padding: 2px 1px 1px 16px;
+        .contain .search input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 10px 10%;
+            border-radius: 40px;
+            font-size: 14px;
+            background-color: rgb(240, 242, 245);
+        }
+
+        .search-2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20%;
+            height: 100%;
+            z-index: 11;
+        }
+
+        .path-1 {
+            position: absolute;
+            top: 50%;
+            left: 20%;
+        }
+
+        .svg-2 {
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            margin-right: 3%;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(240, 242, 245);
+            cursor: pointer;
+        }
+.svg-3{
+    cursor: pointer;
+}
+        .top-icons {
+            display: flex;
+            background-color: rgb(253, 255, 253);
+            width: fit-content;
+        }
+
+        .fa-solid {
+         font-size: medium;
+         padding-left: 4px;
+        }
+        .baro{
+         margin-bottom: 15px;
+        }
+
+        .bg-grey {
+            background-color: rgb(240, 242, 240);
+        }
+
+        .side-bar {
+            position: fixed;
+            top: 60px;
+            height: 305px;
+            width: 20%;
+            white-space: nowrap;
+            padding-top: 18px;
+            -webkit-font-smoothing: antialiased;
+            background-color: #f0f2f5;
+            float: left;
+        }
+
+        .all {
             font-size: 15px;
-            color: rgb(0, 0, 0);
+            font-weight: bolder;
+            line-height: 19.9995px;
+            white-space: nowrap;
+            color: rgb(5, 5, 5);
+            margin-left: 14px;
+        }
+
+        .icon {
+            color: rgb(24, 118, 242);
+            font-size: 130%;
+            display: flex;
+            align-items: center;
+            width: 20px;
         }
 
         .left {
-            font-family: "Segoe UI", Arial, sans-serif;
-            font-weight: 400;
-            font-size: 21px;
-            padding-left: 16px;
-            margin: 12px 0 4px 0;
-            width: 204px;
+            /* margin-left: 15px; */
         }
 
-        .ret {
-            padding: 16px 0px 32px 32px;
-            border-right: 1px solid #f1f1f1;
-            width: 79%;
-            color: #000 !important;
-            /* float: left; */
-        }
-
-        .whoo {
-            float: right !important;
-            padding: 16px 8px 16px 2px;
-            width: 10%;
-            text-align: center;
-        }
-
-        .ad {
-            background-color: #DDD;
-            color: #000;
-            height: 80px;
-            margin-right: 19px;
-        }
-
-        .io {
-            font-family: "Segoe UI", Arial, sans-serif;
-            font-weight: 400;
-            margin: 10px 0;
-            font-size: 42px;
-
-        }
-
-        .mm {
-            font-size: 18px;
-            font-family: 'Source Sans Pro', sans-serif;
-            padding-left: 19px;
-            padding-right: 19px;
-            border: 1px solid #cccccc;
-            background-color: #04AA6D;
-            color: #ffffff;
-            border-color: #04AA6D;
-            text-decoration: none;
+        .bar {
+            display: flex;
+            flex-direction: row;
+            cursor: pointer;
+            width: 245px;
+            padding-bottom: 5px;
+            font-size: 12px;
+            padding-top: 5px;
+            margin-bottom: 6px;
+            padding-left: 12px;
+            margin-left: 9px;
             border-radius: 5px;
-            /* border-image-repeat: stretch; */
-            cursor: pointer;
-            line-height: 27px;
-            white-space: nowrap;
-            padding: 8px 16px;
         }
 
-        .but {
-            float: left !important;
-
-        }
-
-        .btn {
-            float: right;
-            margin-right: 19px;
-        }
-
-        .cle::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        .intro {
-            background-color: #D9EEE1;
-            border-left: none;
-            padding: 32px;
-            margin: 24px -32px;
-            font-size: 16px;
-            color: #000 !important;
-            font-family: Verdana, sans-serif;
-            line-height: 24px;
-        }
-
-        .tg {
-            margin-top: 1em;
-            margin-bottom: 1em;
-            font-size: 15px;
-            line-height: 22.5px;
-            margin-bottom: 15px;
-            margin-top: 15px
-        }
-
-        .uchihamadara{
-            font-size: 18px;
-            padding-left: 25px;
-            padding-right: 25px;
-            font-family: 'Source Sans Pro', sans-serif;
-            margin-top: 6px;
-            background-color: #059862 !important;
-            border-radius: 5px;
-            color: #FFFFFF;
-            margin-bottom: 16px !important;
-            border: none;
-            display: inline-block;
-            padding: 8px 16px;
-            vertical-align: middle;
-            overflow: hidden;
-            text-decoration: none;
-            text-align: center;
-            cursor: pointer;
-            white-space: nowrap;
-            text-align: center;
-            cursor: pointer;
-            white-space: nowrap;
-        }
-
-        #fg {
-            margin: 20px 16px;
+        #break {
+            margin: 0px 16px 15px 16px;
             border: 0;
-            border-top: 1px solid #eee;
+            border-top: 1px solid rgb(200, 200, 200);
             box-sizing: content-box;
             height: 0;
             overflow: visible;
         }
 
-        .e3e {
-            font-size: 32px;
-            font-family: "Segoe UI", Arial, sans-serif;
+        #break1 {
+            margin: 0px 16px 15px 16px;
+            border: 0;
+            border-top: 1px solid rgb(200, 200, 200);
+            box-sizing: content-box;
+            height: 0;
+            overflow: visible;
+        }
+
+        .font {
+            font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+
+        }
+
+        .size {
+            font-size: 13px;
             font-weight: 400;
-            margin: 10px 0;
-            font-weight: 400;
-            line-height: 48px;
-        }
-
-        .r3r {
-            margin-top: 1.2em;
-            margin-bottom: 1.2em;
-            font-size: 15px;
-            font-family: Verdana, sans-serif;
-            line-height: 22.5px;
-        }
-
-        .exam {
-            padding: 8px 20px;
-            margin: 24px -20px;
-            box-shadow: none !important;
-            background-color: #E7E9EB;
-            border-radius: 5px;
-            font-family: Verdana, sans-serif;
-            font-size: 15px;
-            line-height: 1.5;
-        }
-
-        .yu {
-            font-family: "Segoe UI", Arial, sans-serif;
-            font-weight: 400;
-            margin: 10px 0;
-            font-size: 24px;
-        }
-
-        .ih {
-            font-size: 15px;
-            border-left: 4px solid #04AA6D;
-            margin-top: 16px !important;
-            margin-bottom: 16px !important;
-            width: auto;
-            background-color: #fff;
-            color: #000;
-            padding: 8px 12px;
-            border-left: 4px solid #4CAF50;
-            word-wrap: break-word;
-            font-family: Consolas, Menlo, "courier new", monospace;
-        }
-
-        .red {
-            color: red;
-        }
-
-        .brown {
-            color: brown;
-        }
-
-        .blue {
-            color: blue;
-        }
-
-        .sec {
-            color: #FFFFFF;
-            background-color: #04AA6D !important;
-            border-radius: 5px;
-            font-size: 17px;
-            font-family: 'Source Sans Pro', sans-serif;
-            padding: 6px 18px;
-            margin-bottom: 16px !important;
-            display: inline-block;
-            text-align: center;
-            cursor: pointer;
-            white-space: nowrap;
             text-decoration: none;
-            vertical-align: middle;
-            overflow: hidden;
+            color: rgb(101, 103, 107);
+            cursor: pointer;
         }
 
-        .bn {
-            margin-top: 1.2em;
-            margin-bottom: 1.2em;
+        .side-footer {
+            display: flex;
+            margin-left: 13px;
+            position: sticky;
+
+        }
+
+        .space {
+            margin-bottom: 120px;
+        }
+
+        .main-1 {
+            margin-right: 10%;
+            margin-top: 16px;
+            margin-left: 32%;
+            width: 39%;
+            float: left;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .box {
+            display: flex;
+        }
+
+        .box-2 {
+            color: rgb(101, 103, 107);
             font-size: 15px;
+            height: 60px;
+            line-height: 16.08px;
+            -webkit-font-smoothing: antialiased;
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
         }
 
-        #az {
+        .last {
+            position: fixed;
+            width: 20%;
+            transform: translate(395%);
+            top: 75px;
+            z-index: 10;
+
+        }
+
+        .last-1 {
+            color: rgb(6, 6, 6);
             font-weight: bolder;
-            font-family: Verdana, sans-serif;
+            font-size: 1.063rem;
         }
 
-        .geoo {
-            margin-top: 1.2em;
-            margin-bottom: 1.2em;
-            font-size: 15px;
-            font-family: Verdana, sans-serif;
-        }
-
-        #mid {
-            overflow: auto;
-            text-align: center;
-            margin-left: 40px;
-            margin-right: 40px;
-            background-color: #E7E9EB;
-        }
-
-        #fom {
-            padding: 20px;
-            margin: 32px -20px;
-            background-color: black;
-            color: #040404;
-            border-radius: 5px;
-        }
-
-        .prec {
-            background-color: #e7e9eb;
-            padding: 16px;
-            font-size: 120%;
-            font-family: Consolas, Menlo, "Courier New", Courier, monospace;
-            overflow: auto;
-        }
-
-        pre {
-            font-family: monospace, monospace;
-            font-size: 1em;
-            color: #000000;
-        }
-
-        .mar {
-            border-style: none;
-            padding: 0;
-            background-color: #04AA6D;
-            border-radius: 5px;
-            font-size: 17px;
-            font-family: 'Source Sans Pro', sans-serif;
-            padding: 7px 18px;
-            color: #FFFFFF;
-            margin-bottom: 16px !important;
-            border: none;
-            display: inline-block;
-            text-align: center;
+        .image {
             cursor: pointer;
-            white-space: nowrap;
-            vertical-align: middle;
-            overflow: hidden;
-            text-decoration: none;
+            height: 125px;
+            width: 80%;
+            margin: 0px 12%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .imageo2 {
+            cursor: pointer;
+            height: 125px;
+            width: 80%;
+        }
+
+        .add {
+            background-color: hsl(214, 89%, 52%);
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+            border-top-left-radius: 100%;
+            border-top-right-radius: 100%;
+            position: absolute;
+            left: 55px;
+            top: 115px;
+            width: 20px;
+            height: 20px;
+            outline: 10px solid rgb(220, 220, 251);
+        }
+       
+
+        .box-3 {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .shadow {
+            font-size: 12px;
+            height: 35px;
             margin-left: 15px;
+            width: 79%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 14px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: 0px 1px 1px 1px rgb(223, 222, 222);
+            font-weight: bold;
+            cursor: pointer;
         }
 
-        .fvv {
-            margin-top: 1.2em;
-            margin-bottom: 1.2em;
-            font-size: 15px;
-            font-family: Verdana, sans-serif;
-            line-height: 1.5;
-            color: black;
+        .distrib {
+            display: flex;
+            position: relative;
         }
 
-        .exer {
+        .mid {
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 4px;
+            row-gap: 5px;
+            transform: translateY(65%);
+        }
+
+        .side {
+            top: 70px;
+            position: absolute;
+            right: 5%;
+        }
+
+        .side-1 {
+            background-color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            outline: 1px solid rgb(227, 225, 225);
+        }
+
+        .text {
+            font-size: 0.9rem;
+            vertical-align: center;
+            white-space: nowrap;
+        }
+
+        .color {
+            background-color: white;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 1px 1px 1px rgb(223, 222, 222);
+        }
+
+        .box-4 {
+            margin-top: 10px;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 1px 1px 1px rgb(223, 222, 222);
+        }
+
+        .model-1 {
+            display: flex;
+            flex-direction: row;
+            padding-left: 12px;
+            padding-top: 18px;
             padding-bottom: 8px;
         }
 
-        .ax {
-            margin-top: 1.2em;
-            margin-bottom: 1.2em;
+        .input-2 {
+            height: 38px;
             font-size: 15px;
-        }
-
-        .mb {
-            font-family: 'Source Sans Pro', sans-serif;
-            border: none;
-            border-radius: 5px;
-            display: inline-block;
-            padding: 6px 18px;
-            vertical-align: middle;
-            overflow: hidden;
-            text-decoration: none;
-            color: inherit;
-            text-align: center;
-            cursor: pointer;
-            white-space: nowrap;
-            color: #fff !important;
-            background-color: #2196F3 !important;
-            font-size: 18px !important;
-        }
-        .roe{
-        margin-right:16px;
-        display:grid;
-        grid-template-columns: auto auto auto;
-        }
-
-        .irq {
-            padding: 0 8px;
-            width: 95%;
-            white-space: nowrap;
-        }
-
-        .nq {
-            border: 1px solid #e3e3e3;
-            background-color: #E7E9EB;
-            color: #555;
-            margin-bottom: 16px;
-            width: 100%;
-            padding: 20px 0;
-            text-align: center;
-            vertical-align: middle;
-            display: inline-block;
-            text-decoration: none !important;
-            border-radius: 5px;
-            font-family: Verdana, sans-serif;
-            font-size: 15px;
-            line-height: 1.5;
-        }
-
-   
-        #ade {
-            position: absolute;
-            right: 5%;
-            width: 150px;
-            transform: rotate(13deg);
-            bottom: -17%;
-        }
-
-        #rro {
-            position: absolute;
-            right: 150px;
-            width: 200px;
-            height: 150px;
-            transform: rotate(10deg);
-            bottom: -16px;
-            z-index: 1;
-        }
-
-        #diw {
-            position: relative;
-            padding: 10px 60px 50px 60px;
-            margin-bottom: 125px;
-            border-radius: 16px;
-            background-color: #282A35;
-            color: #FFC0C7;
-            font-family: 'Source Sans Pro', sans-serif;
-            margin-right: 16px;
-        }
-
-        #diw h2 {
-            font-size: 50px;
-            margin-top: 1em;
-            margin-bottom: 1em;
-            font-family: 'Source Sans Pro', sans-serif
-        }
-
-        #diw p {
-            font-size: 42px;
-            margin-top: 1em;
-            margin-bottom: 1em;
-            font-family: 'Source Sans Pro', sans-serif
-        }
-
-        #diw a {
             border-radius: 50px;
-            margin-top: 50px;
-            font-size: 18px;
-            background-color: #04AA6D;
-            padding: 17px 55px;
-            text-decoration: none;
-            color: white;
-        }
-
-        #diw a:hover,
-        #diw a:active {
-            background-color: #059862 !important;
-        }
-
-        .pl {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            column-gap: 250px;
-        }
-
-        .xf {
-            background-color: #04AA6D;
-            color: #ffffff;
-            border-color: #04AA6D;
-            font-size: 18px;
-            font-family: 'Source Sans Pro', sans-serif;
-            padding-left: 5px;
-            padding-right: 5px;
-            border: 1px solid #cccccc;
-            border-radius: 5px;
-            padding: 8px 5px;
-            overflow: hidden;
-            text-decoration: none;
-            cursor: pointer;
-            white-space: nowrap;
-            line-height: 1.5;
-            text-align: center;
+            margin-left: 12px;
+            width: 82%;
+            padding-left: 8px;
+            border: none;
+            display: inline-block;
+            outline: none;
 
         }
 
-        .rs {
-            background-color: #ffffff;
-            color: #000000;
-            font-size: 18px;
-            font-family: 'Source Sans Pro', sans-serif;
- 
-            border: 1px solid #cccccc;
-            border-radius: 5px;
-        
-            padding: 8px 5px;
-            vertical-align: middle;
-            overflow: hidden;
-            text-decoration: none;
-            cursor: pointer;
-            white-space: nowrap;
-            text-align: center;
+        .box-5 {
+            margin-top: 15px;
+            background-color: white;
+            box-shadow: 0px 1px 1px 1px rgb(223, 222, 222);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: relative;
         }
 
-        .la {
-            margin-left: 220px;
-        }
-
-        .fvd {
+        .desc {
+            padding-top: 16px;
+            padding-left: 16px;
             display: flex;
-            justify-content: space-around;
-           
+            flex-direction: row;
         }
 
-        .vr {
-            text-decoration: none;
-            margin-top: 1px;
-            margin-bottom: 1px;
-            font-size: 17px;
-            font-family: Source Sans Pro, sans-serif;
-            background-color: #282A35 !important;
-            color: white !important;
-            border-radius: 4px;
-            width: 100%;
-            padding: 8px 55px;
-            overflow: hidden;
-            text-align: center;
-            cursor: pointer;
-            white-space: nowrap;
-            line-height: 25.5px
+        .desc-1 {
+            margin-left: 10px;
+            margin-bottom: 10px;
+            position: inline-block;
         }
-        .pol{
-            display: grid;
-         grid-template-columns: auto auto auto auto;
+
+        .box-6 {
+            font-size: 15px;
+            line-height: 19.9995px;
+            font-weight: 600;
         }
-        .garamanday{
-            text-align: center !important;
-            font-size: 12px !important;
-            color: #000 !important;
-            font-family: Verdana,sans-serif;
-            line-height: 18px;
-            cursor: pointer;
-        }
-        .edf{
-            font-size: 12px !important;
-            text-decoration: none;
-            text-align: center !important;
-            color: black;
-            line-height: 18px;
-        }
-        .fa-solid{
-            color: white;
-        }
-        .cp{
+
+        .desc-2 {
+            color: rgb(101, 103, 107);
+            font-size: 13px;
             font-weight: 400;
-margin: 10px 0;
-font-size: 18px;
-text-align: center !important;
-color: #000 !important;
-text-decoration: none;
         }
-        .lst{
-            text-align: center !important;
-            font-size: 12px !important;
-            opacity: 0.60;
-            font-family: Verdana,sans-serif;
-            color: rgb(0, 0, 0);
-            line-height: 18px;
-            margin-left: 21px;
-            margin-right: 21px;
-            margin-top: 17px;
-        }
-    .fa-sharp:hover,.fa-regular:hover,.z:hover,.nq:hover{
-            background-color: #000000 !important;
-color: #ffffff !important;
-        }
-        .z:active {
-  color: #059862;
-}
-  .fa-home{
-    color: #059862;
 
-  }
- .sec:hover,.butn2:hover, .mm:hover,.mar:hover,.xf:hover,.vr:hover{
-  box-shadow: none;
-  background-color: #059862 !important;
-}
-.ttt:hover,.edf:hover,.cp:hover,.bg:hover{
-    color: #059862 !important;
-}
-.mb:hover{
-  background-color: #0d8bf2 !important;
-}
-.ji:hover,.left:hover,.rs:hover{
-  color: #000000;
-  background-color: #cccccc;}
-.rfd{
-    width: 15px;
-    fill: white;
- 
-}
-  @media screen and (max-width: 1300px){
-.g {
-  display: none;
-}}
-@media screen and (max-width: 1232px) {
-  .f {
-    display: none !important;
-  }
-  .ctut {
-    display: none !important;
-  }
-}
-@media screen and (max-width: 1302px) {
-  .ctut {
-    display: none !important;
-  }
-}
-@media screen and (max-width: 1156px) {
-  .up {
-    display: none !important;
-  }
-  .how {
-     display: none !important;
-  }
-}
-@media screen and (max-width: 1056px) {
-  .ct {
-    display: none !important;
-  }
-  .boot {
-    display: none !important;
-  }
-}
-@media screen and (max-width: 1350px) {
-  .cpp {
-    display: none !important;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .op {
-    width: 190px;
-  }
-  .ho{
-    padding-left:190px;
-  }
-}
-@media screen and (max-width: 1290px) {
-   .fvd {
-    row-gap: 20px;
-    display: grid;
-    grid-template-columns: auto;
-  
-  }
-.vr {
-            text-decoration: none;
-            margin-top: 1px;
-            margin-bottom: 1px;
-            font-size: 17px;
-            font-family: Source Sans Pro, sans-serif;
-            background-color: #282A35 !important;
-            color: white !important;
-            border-radius: 4px;
-            width: 100%;
-            padding: 8px 30px;
-            overflow: hidden;
-            text-align: center;
-            cursor: pointer;
-            white-space: nowrap;
-            line-height: 25.5px; 
-            display:block
-        }
-}
-@media screen and (max-width: 636px) {
- .rs{
-            display: none;
-        }}
-        @media screen and (max-width: 782px) {
-        #rro{
-            display: none !important;
-        }
-      #ade {
+        .desc-4 {
+            left: 92%;
             position: absolute;
-            right: 5%;
-            width: 70px;
-            transform: rotate(13deg);
-            bottom: 89%;
-        }  
-    }
-@media screen and (max-width: 1266px) {
-  .pl {
-    column-gap: 150px;
-  }
-}
-@media screen and (max-width: 635px) {
-    .pl {
-            display: grid;
-            grid-template-columns: auto auto;
-            column-gap: 250px;
+            padding-top: 22px;
         }
-}
-@media screen and (max-width: 1254px) {
-  .w3 {
-    display: none !important;
-  }
-}
-@media screen and (max-width:988px) {
-  .pl {
-    column-gap: 80px;
-  }}
-@media screen and (max-width: 924px) {
-  .php{
-    display: none !important;
-        }}
-  @media screen and (max-width: 905px) {
-  .op {
-    display: none !important;
-  }
-  .rty{
-    display: none !important;
-  }
-  .ho{
-    padding-left: 0px;
-  }
-  .la{
-    margin-left: 0px;
-  }
-  .pol{
-         display: grid;
-         grid-template-columns: auto auto;
+
+        .fb-image {
+            width: 100%;
+            background-color: rgb(101, 103, 107);
+            height: auto;
+            margin-bottom: 18px;
         }
-        .cf{
-    display: none !important;
+
+        .emoji {
+            margin-left: 16px;
+            display: flex;
+            justify-content: space-between;
+            color: rgb(101, 103, 107);
+            -webkit-font-smoothing: antialiased;
+            font-size: 15px;
+            margin-bottom: 8px;
         }
-}
+
+        main {
+            margin-top: 56px;
+        }
+
+        .img-last {
+            width: 113px;
+            height: auto;
+            background-color: rgb(101, 103, 107);
+            margin-top: 14px;
+            border-radius: 10%;
+        }
+
+        .bar:active {
+            border-left: 2px solid var(--color-fill)
+        }
+
+        .bar:hover,.contain input:hover{
+            background-color: rgb(228, 230, 235);
+        }
+        .svg-2:hover{
+            background-color: rgb(228, 230, 235);
+            .svg{
+                fill: rgb(228, 230, 235);
+            }
+        }
+        .bg:hover{
+            background-color: rgb(228, 230, 235);
+        }
+
+.bg{
+    border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            background-color:rgb(220, 220, 251);
+display: flex;
+align-items: center;
+justify-content: center;}
+        @media screen and (max-width: 1199px) {
+            .all {
+                display: none;
+            }
+
+            .bar {
+                display: flex;
+                flex-direction: row;
+                cursor: pointer;
+                width: 40px;
+                padding-bottom: 7px;
+                font-size: 12px;
+                padding-top: 7px;
+                margin-bottom: 6px;
+                padding-left: 5px;
+                margin-left: 9px;
+                border-radius: 5px;
+            }
+
+            #break1 {
+                margin: 0px 2px 15px 12px;
+                border: 0;
+                border-top: 1px solid rgb(200, 200, 200);
+                box-sizing: content-box;
+                height: 0;
+                overflow: visible;
+                width: 50%;
+            }
+
+            .side-footer {
+                display: none;
+            }
+
+            .side-bar {
+                position: fixed;
+                top: 57px;
+                height: 100%;
+                width: 60px;
+                white-space: nowrap;
+                padding-top: 18px;
+                -webkit-font-smoothing: antialiased;
+                background-color: #ffffff;
+                float: left;
+            }
+
+            .icon {
+                color: rgb(24, 118, 242);
+                font-size: 170%;
+                display: flex;
+                align-items: center;
+                width: 20px;
+                margin-left: 8px;
+            }
+
+            .left {
+                padding-left: 4px;
+            }
+
+            .main-1 {
+                padding-right: 14%;
+                margin-top: 16px;
+                padding-left: 15%;
+                width: 45%;
+                float: left;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                margin-right: 2px;
+                margin-left: 2px;
+            }
+
+            .last {
+                position: fixed;
+                /* float: left; */
+                width: 13%;
+                transform: translate(530%);
+                top: 75px;
+                z-index: 10;
+
+            }
+        }
 
 
-@media screen and (max-width: 836px) {
-  .ja {
-    display: none;
-  }
-    .e {
-    display: none;
-  }
-}
-@media screen and (max-width: 780px) {
-  .pyth {
-    display: none;
-  }}
-@media screen and (max-width: 676px) {
-  .sql{
-    display: none;
+        @media screen and (max-width: 1052px) {
+            .main-1 {
+                padding-right: 14%;
+                margin-top: 16px;
+                padding-left: 10%;
+                width: 50%;
+                float: left;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                margin-right: 2px;
+                margin-left: 2px;
+            }
+        }
 
-  }
-}
-@media screen and (max-width: 572px) {
-  .java{
-    display: none;
-  }
-  .d{
-    display: none;
-  }
-  .c{
-    display: none;
-  }
-  .roe{
-    grid-template-columns: auto;
-  }
-}
-@media screen and (min-width: 572px) {
-  .cew{
-    display: none;
-  }}
 
-@media screen and (max-width: 452px) {
-  .css {
-    display: none;}
-}
-@media screen and (max-width: 408px) {
-  .html {
-    display: none;}
-.log {
-    display: none;
-}
-.h{
-    text-align: center;
-}
-}
+        @media screen and (max-width: 946px) {
+            .main-1 {
+                margin-top: 16px;
+                padding-left: 25%;
+                width: 60%;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                margin-right: 2px;
+                margin-left: 2px;
+            }
+
+            .last {
+                display: none;
+            }
+
+            .search {
+                display: none;
+
+            }
+
+            .path-2 {
+                top: 20%;
+                background-color: rgb(228, 230, 235);
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 7%;
+            }
+
+            .fb-logo {
+                margin-left: 16px;
+                padding: 15px 10% 15px 1%;
+                display: flex;
+
+            }
+        }
+
+        @media screen and (max-width: 790px) {
+            .main-1 {
+                margin-top: 16px;
+                padding-left: 20%;
+                width: 65%;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                margin-right: 2px;
+                margin-left: 2px;
+            }
+
+            .text {
+                font-size: 15px;
+                vertical-align: center;
+                white-space: nowrap;
+            }
+
+        }
+
+        @media screen and (min-width: 946px) {
+            .path-2 {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            .main-1 {
+                margin-top: 16px;
+                padding-left: 15%;
+                width: 75%;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+        }
+
+        @media screen and (max-width: 692px) {
+            .space {
+                margin-right: 2%;
+            }
+        }
+
+
+        @media screen and (max-width: 659px) {
+            .main-1 {
+                padding-right: 10%;
+                margin-top: 16px;
+                padding-left: 12%;
+                width: 80%;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+        }
+
+        @media screen and (max-width: 623px) {
+
+            .main-1 {
+                padding-right: 4%;
+                margin-top: 16px;
+                padding-left: 9%;
+                width: 500px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                margin-left: 2px;
+            }
+
+         
+        }
+
+        @media screen and (max-width: 561px) {}
+
+        @media screen and (max-width: 752px) {}
     </style>
 </head>
 
 <body>
-    <div class="inawar ">
-        <span>
-            <a href="https://www.w3schools.com" class="i" title="Home">
-                <svg class="charge" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
-                    clip-rule="venodde" viewBox="0 0 512 481.59">
-                    <path class="pain" fill="#04AA6D" fill-rule="nonzero"
-                        d="M431.53 101.35s12.9 13.83 30.92 13.83c14.23 0 24.57-8.6 24.57-20.38 0-14.43-13.21-21.09-29.18-21.09h-9.42l-5.63-12.69 24.98-29.59c5.33-6.35 9.83-10.34 9.83-10.34s-3.99.21-12.08.21h-40.64V0h83.23v15.56l-33.38 38.6C493.57 56.82 512 70.23 512 93.88c0 23.24-17.61 44.74-48.02 44.74-28.97 0-45.04-18.22-45.04-18.22l12.59-19.05zM1.13 458.56H17.2c0 4.7 4.1 9.21 11.36 9.21 6.76 0 11.27-3.38 11.27-7.88 0-3.89-2.97-5.63-8.09-6.76l-9.22-2.36c-15.56-4.09-19.55-12.38-19.55-21.19 0-10.75 10.65-20.58 25.7-20.58 12.28 0 26.21 6.25 26 21.61H38.39c0-4.71-4.3-7.68-9.21-7.68-5.33 0-9.01 3.07-9.01 7.37 0 3.58 3.38 5.63 7.37 6.55l11.06 2.97c15.56 3.99 18.32 13.72 18.32 20.07 0 14.02-14.02 21.7-28.05 21.7-13.61 0-27.44-8.29-27.74-23.03zm453.03 0h16.07c0 4.7 4.1 9.21 11.36 9.21 6.76 0 11.27-3.38 11.27-7.88 0-3.89-2.97-5.63-8.09-6.76l-9.22-2.36c-15.56-4.09-19.55-12.38-19.55-21.19 0-10.75 10.65-20.58 25.7-20.58 12.28 0 26.2 6.25 26 21.61h-16.38c0-4.71-4.3-7.68-9.22-7.68-5.32 0-9 3.07-9 7.37 0 3.58 3.38 5.63 7.37 6.55l11.05 2.97c15.57 3.99 18.33 13.72 18.33 20.07 0 14.02-14.02 21.7-28.05 21.7-13.62 0-27.34-8.29-27.64-23.03zm-35.94 21.29V373.17h17.2v106.68h-17.2zm-92.55-34.6c0-21.91 16.99-36.25 36.65-36.25s36.86 14.34 36.86 36.25-17.2 36.34-36.86 36.34c-19.55 0-36.65-14.43-36.65-36.34zm56.21 0c0-11.88-8.91-20.28-19.56-20.28-10.65 0-19.35 8.4-19.35 20.28 0 12.08 8.7 20.37 19.35 20.37 10.75 0 19.56-8.29 19.56-20.37zm-144.36 0c0-21.91 17-36.25 36.65-36.25 19.66 0 36.86 14.34 36.86 36.25s-17.2 36.34-36.86 36.34c-19.65 0-36.65-14.43-36.65-36.34zm56.21 0c0-11.88-8.91-20.28-19.56-20.28-10.65 0-19.35 8.4-19.35 20.28 0 12.08 8.7 20.37 19.35 20.37 10.65 0 19.56-8.29 19.56-20.37zm-74.23-4.2v38.7h-17.2v-37.47c0-11.06-6.65-17-14.33-17-7.88 0-17.61 4.61-17.61 18.02v36.55h-17.2V373.17h17.3v48.02c3.38-8.4 14.54-12.29 21.4-12.29 17.81.1 27.64 12.08 27.64 32.15zm-148.34 4.2c0-21.91 17.6-36.25 37.57-36.25 11.98 0 21.7 5.33 28.05 13.31l-12.08 9.63c-3.58-4.3-9.42-6.97-15.66-6.97-11.98 0-20.58 8.6-20.58 20.28 0 11.56 8.6 20.37 20.58 20.37 6.24 0 12.08-2.66 15.66-6.96l12.08 9.62c-6.35 7.99-16.07 13.31-28.05 13.31-19.97 0-37.57-14.43-37.57-36.34zm198-315.12 109.95 195.75 54.26-96.75-103.81-184.8H208.75l-50.06 89.17-50.06-89.17H0l158.07 281.55.62-1.03.61 1.03 109.86-195.75z" />
-                </svg></a><a class="cew haaaaa" title="menu">Menu
-                <i class='fa fa-caret-down'>
-                </i>
-                <a class="c haaaaa" title="Tutorials">Tutorials
-                <i class='fa fa-caret-down'>
-                </i>
-            </a>
-            <a class="g haaaaa" href="" title="References">References <i class="fa fa-caret-down"></i>
-            </a>
-            <a class="e haaaaa" href="" title="Exercises">Exercises <i class='fa fa-caret-down'></i>
-            </a>
-            <a class="f haaaaa" href="https://www.w3schools.com/bootcamp/index.php"
-                title="Web Development Bootcamp">Bootcamps
-            </a>
-            <a class="g haaaaa" href="https://www.w3schools.com/videos/index.php" title="Video Tutorials">Videos</a>
-        </span>
-
-        <span class="jaldiwahasyhato">
-            <a class="hongay badnam" href="/pro/index.php"><svg class="rfd" id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path class="o8o" d="M259.92,262.91,216.4,149.77a9,9,0,0,0-16.8,0L156.08,262.91a9,9,0,0,1-5.17,5.17L37.77,311.6a9,9,0,0,0,0,16.8l113.14,43.52a9,9,0,0,1,5.17,5.17L199.6,490.23a9,9,0,0,0,16.8,0l43.52-113.14a9,9,0,0,1,5.17-5.17L378.23,328.4a9,9,0,0,0,0-16.8L265.09,268.08A9,9,0,0,1,259.92,262.91Z" fill="#ffffff" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><polygon points="108 68 88 16 68 68 16 88 68 108 88 160 108 108 160 88 108 68" fill="#ffffff" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><polygon points="426.67 117.33 400 48 373.33 117.33 304 144 373.33 170.67 400 240 426.67 170.67 496 144 426.67 117.33" fill="#ffffff" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg> Upgrade </a>
-            <a class="tu badnam" href="https://shop.w3schools.com/collections/course-catalog">Get Certified</a>
-            <a class="nam badnam" href="/spaces/index.html">Create Website</a>
-            <a class="log badnam" href="/signup/index.html">Sign Up</a>
-            <a class="focuskaro "
-                href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fmy-learning.w3schools.com">Log
-                in</a>
-
-        </span>
-    </div>
-
-    <div class='naa'>
-        <div style="overflow:auto;">
-            <div class="bc" style="width:100%;overflow:hidden;height:44px">
-                <a href="" class="fa-solid fa-bars z"></a>
-                <a href='' class='fa fa-home z' title='Home'>
-                </a><a class="html z" href='/html/default.asp' title='HTML Tutorial'
-                    style="padding-left:18px!important;padding-right:18px!important;">HTML
-                </a>
-                <a class="css z" href='/css/default.asp' title='CSS Tutorial'>CSS
-                </a>
-                <a class="java z" href='/js/default.asp' title='JavaScript Tutorial'>JAVASCRIPT
-                </a>
-                <a class="sql z" href='/sql/default.asp' title='SQL Tutorial'>SQL
-                </a>
-                <a class="pyth z" href='/python/default.asp' title='Python Tutorial'>PYTHON
-                </a>
-                <a class="ja z" href='/java/default.asp' title='Java Tutorial'>JAVA
-                </a>
-                <a class="php z" href='/php/default.asp' title='PHP Tutorial'>PHP
-                </a>
-                <a class="boot z" href='/bootstrap/bootstrap_ver.asp' title='Bootstrap Tutorial'>BOOTSTRAP
-                </a>
-                <a class="how z" href='/howto/default.asp' title='How To'>HOW TO
-                </a>
-                <a class="w3 z" href='/w3css/default.asp' title='W3.CSS Tutorial'>W3.CSS
-                </a>
-                <a class="ctut z" href='/c/index.php' title='C Tutorial'>C
-                </a>
-                <a class="cpp z" href='/cpp/default.asp' title='C++ Tutorial'>C++
-                </a>
-                <span class="hj">
-                    <i class="fa-sharp fa-solid fa-earth-europe">
-                    </i><i class="fa-regular fa-earth-oceania">
-                    </i><i class="fa-sharp fa-solid fa-magnifying-glass">
-                    </i> </span>
+    <header>
+        <div class="fb-logo">
+            <svg aria-label="Facebook logo" class="fill-color" role="img" viewBox="0 0 120 24" width="120">
+                <path fill="var(--color-fill)"
+                    d="m109.202 14.864 4.404-7.03h4.746l-4.622 7.278 4.808 7.463h-4.746l-4.59-7.215v7.215h-4.467V.433l4.467-.402v14.833ZM98.596 14.524c0-1.951-.807-3.5-2.885-3.5s-2.885 1.549-2.885 3.5v1.363c0 1.95.807 3.499 2.885 3.499s2.885-1.549 2.885-3.5v-1.362ZM88.36 15.577v-.743c0-4.243 2.42-7.309 7.351-7.309s7.351 3.066 7.351 7.309v.743c0 4.242-2.42 7.308-7.351 7.308-4.932 0-7.351-3.066-7.351-7.308ZM82.406 14.524c0-1.951-.807-3.5-2.884-3.5-2.079 0-2.885 1.549-2.885 3.5v1.363c0 1.95.806 3.499 2.885 3.499 2.077 0 2.884-1.549 2.884-3.5v-1.362Zm-10.235 1.053v-.743c0-4.243 2.419-7.309 7.35-7.309 4.932 0 7.352 3.066 7.352 7.309v.743c0 4.242-2.42 7.308-7.352 7.308-4.931 0-7.35-3.066-7.35-7.308ZM66.216 14.648c0-2.075-.806-3.623-2.946-3.623-1.83 0-2.823 1.3-2.823 3.406v1.548c0 2.106.993 3.407 2.823 3.407 2.14 0 2.946-1.549 2.946-3.623v-1.115Zm4.467 1.022c0 4.118-1.985 7.215-6.08 7.215-2.233 0-3.783-1.115-4.404-2.539v2.23h-4.218V.434L60.447.03v9.848c.651-1.3 2.078-2.354 4.157-2.354 4.094 0 6.079 3.097 6.079 7.216v.929ZM44.723 13.843h5.397v-.372c0-1.61-.651-2.88-2.606-2.88-2.016 0-2.791 1.27-2.791 3.252m-4.466 1.92v-1.301c0-4.18 2.388-6.937 7.257-6.937 4.59 0 6.607 2.787 6.607 6.875v2.353h-9.398c.093 2.014.992 2.912 3.474 2.912 1.675 0 3.443-.341 4.745-.898l.807 3.065c-1.179.62-3.598 1.084-5.738 1.084-5.645 0-7.754-2.818-7.754-7.153M35.388 7.525c1.737 0 3.38.372 4.28.991l-.992 3.159c-.683-.34-1.8-.682-2.978-.682-2.42 0-3.474 1.394-3.474 3.778v.868c0 2.384 1.055 3.778 3.474 3.778 1.179 0 2.295-.34 2.978-.682l.992 3.16c-.9.618-2.543.99-4.28.99-5.242 0-7.63-2.818-7.63-7.34v-.68c0-4.522 2.388-7.34 7.63-7.34M15.973 15.732c0 2.198.806 3.654 2.884 3.654 1.83 0 2.76-1.332 2.76-3.438v-1.486c0-2.106-.93-3.437-2.76-3.437-2.078 0-2.884 1.455-2.884 3.654v1.053Zm-4.467-.991c0-4.119 1.954-7.216 6.049-7.216 2.233 0 3.598 1.146 4.249 2.57v-2.26h4.28v14.74h-4.28v-2.23c-.62 1.425-2.016 2.54-4.25 2.54-4.094 0-6.048-3.097-6.048-7.215v-.93ZM9.274 3.592c-1.396 0-1.8.62-1.8 1.982v2.26h3.723l-.372 3.655h-3.35v11.086H3.009V11.49H0V7.835h3.009V5.636C3.009 1.951 4.497 0 8.654 0c.9 0 1.954.062 2.605.155v3.437H9.274Z">
+                </path>
+            </svg>
+            <span class="path-2"><svg fill="rgb(96, 103, 112)" viewBox="0 0 16 16" width="1em" height="1em"
+                    class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xlup9mm x1kky2od">
+                    <g fill-rule="evenodd" transform="translate(-448 -544)">
+                        <g fill-rule="nonzero">
+                            <path
+                                d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z"
+                                transform="translate(448 544)"></path>
+                            <path
+                                d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z"
+                                transform="translate(448 544)"></path>
+                            <path
+                                d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z"
+                                transform="translate(448 544)"></path>
+                            <path
+                                d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z"
+                                transform="translate(448 544)"></path>
+                        </g>
+                    </g>
+                </svg></span>
+        </div>
+        <div class="contain">
+            <div class="search">
+                <div class="search-2"> <svg class="path-1" fill="rgb(96, 103, 112)" viewBox="0 0 16 16" width="1em"
+                        height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xlup9mm x1kky2od">
+                        <g fill-rule="evenodd" transform="translate(-448 -544)">
+                            <g fill-rule="nonzero">
+                                <path
+                                    d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z"
+                                    transform="translate(448 544)"></path>
+                                <path
+                                    d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z"
+                                    transform="translate(448 544)"></path>
+                                <path
+                                    d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z"
+                                    transform="translate(448 544)"></path>
+                                <path
+                                    d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z"
+                                    transform="translate(448 544)"></path>
+                            </g>
+                        </g>
+                    </svg></div>
+                <input class="field ml-4" type="text" placeholder="Search Facebook"></input>
             </div>
         </div>
-        <!-- <div class="hh"> -->
-            <div class="op">
-                <!-- <div class="re"> -->
-                    <h2 class="left"><span class="left_h2">CSS</span> Tutorial</h2>
-                    <a class="oyeeee" href="default.asp">CSS HOME</a>
-                    <a class="oyeeee" href="css_intro.asp">CSS Introduction</a>
-                    <a class="oyeeee" href="css_syntax.asp">CSS Syntax</a>
-                    <a class="oyeeee" href="css_selectors.asp">CSS Selectors</a>
-                    <a class="oyeeee" href="css_howto.asp">CSS How To</a>
-                    <a class="oyeeee" href="css_comments.asp">CSS Comments</a>
-                    <a class="oyeeee" href="css_colors.asp">CSS Colors</a>
-                    <a class="oyeeee" href="css_background.asp">CSS Backgrounds</a>
-                    <a class="oyeeee" href="css_border.asp">CSS Borders</a>
-                    <a class="oyeeee" href="css_margin.asp">CSS Margins</a>
-                    <a class="oyeeee" href="css_padding.asp">CSS Padding</a>
-                    <a class="oyeeee" href="css_dimension.asp">CSS Height/Width</a>
-                    <a class="oyeeee" href="css_boxmodel.asp">CSS Box Model</a>
-                    <a class="oyeeee" href="css_outline.asp">CSS Outline</a>
-                    <a class="oyeeee" href="css_text.asp">CSS Text</a>
-                    <a class="oyeeee" href="css_font.asp">CSS Fonts</a>
-                    <a class="oyeeee" href="css_icons.asp">CSS Icons</a>
-                    <a class="oyeeee" href="css_link.asp">CSS Links</a>
-                    <a class="oyeeee" href="css_list.asp">CSS Lists</a>
-                    <a class="oyeeee" href="css_table.asp">CSS Tables</a>
-                    <a class="oyeeee" href="css_display_visibility.asp">CSS Display</a>
-                    <a class="oyeeee" href="css_max-width.asp">CSS Max-width</a>
-                    <a class="oyeeee" href="css_positioning.asp">CSS Position</a>
-                    <a class="oyeeee" href="css_z-index.asp">CSS Z-index</a>
-                    <a class="oyeeee" href="css_overflow.asp">CSS Overflow</a>
-                    <a class="oyeeee" href="css_float.asp">CSS Float</a>
-                    <a class="oyeeee" href="css_inline-block.asp">CSS Inline-block</a>
-                    <a class="oyeeee" href="css_align.asp">CSS Align</a>
-                    <a class="oyeeee" href="css_combinators.asp">CSS Combinators</a>
-                    <a class="oyeeee" href="css_pseudo_classes.asp">CSS Pseudo-class</a>
-                    <a class="oyeeee" href="css_pseudo_elements.asp">CSS Pseudo-element</a>
-                    <a class="oyeeee" href="css_image_transparency.asp">CSS Opacity</a>
-                    <a class="oyeeee" href="css_navbar.asp">CSS Navigation Bar</a>
-                    <a class="oyeeee" href="css_dropdowns.asp">CSS Dropdowns</a>
-                    <a class="oyeeee" href="css_image_gallery.asp">CSS Image Gallery</a>
-                    <a class="oyeeee" href="css_image_sprites.asp">CSS Image Sprites</a>
-                        <a class="oyeeee" href="css_attribute_selectors.asp">CSS Attr Selectors</a>
-                        <a class="oyeeee" href="css_form.asp">CSS Forms</a>
-                        <a class="oyeeee" href="css_counters.asp">CSS Counters</a>
-                        <a class="oyeeee" href="css_website_layout.asp">CSS Website Layout</a>
-                        <a class="oyeeee" href="css_units.asp">CSS Units</a>
-                        <a class="oyeeee" href="css_specificity.asp">CSS Specificity</a>
-                        <a class="oyeeee" href="css_important.asp">CSS !important</a>
-                        <a class="oyeeee" href="css_math_functions.asp">CSS Math Functions</a>
-                        <br>
-                        <h2 class="left"><span class="left_h2">CSS Advanced</span></h2>
-                        <a class="oyeeee" href="css3_borders.asp">CSS Rounded Corners</a>
-                        <a class="oyeeee" href="css3_border_images.asp">CSS Border Images</a>
-                        <a class="oyeeee" href="css3_backgrounds.asp">CSS Backgrounds</a>
-                        <a class="oyeeee" href="css3_colors.asp">CSS Colors</a>
-                        <a class="oyeeee" href="css_colors_keywords.asp">CSS Color Keywords</a>
-                        <a class="oyeeee" href="css3_gradients.asp">CSS Gradients</a>
-                        <a class="oyeeee" href="css3_shadows.asp">CSS Shadows</a>
-                        <a class="oyeeee" href="css3_text_effects.asp">CSS Text Effects</a>
-                        <a class="oyeeee" href="css3_fonts.asp">CSS Web Fonts</a>
-                        <a class="oyeeee" href="css3_2dtransforms.asp">CSS 2D Transforms</a>
-                        <a class="oyeeee" href="css3_3dtransforms.asp">CSS 3D Transforms</a>
-                        <a class="oyeeee" href="css3_transitions.asp">CSS Transitions</a>
-                        <a class="oyeeee" href="css3_animations.asp">CSS Animations</a>
-                        <a class="oyeeee" href="css_tooltip.asp">CSS Tooltips</a>
-                        <a class="oyeeee" href="css3_images.asp">CSS Style Images</a>
-                        <a class="oyeeee" href="css3_image_reflection.asp">CSS Image Reflection</a>
-                        <a class="oyeeee" href="css3_object-fit.asp">CSS object-fit</a>
-                        <a class="oyeeee" href="css3_object-position.asp">CSS object-position</a>
-                        <a class="oyeeee" href="css3_masking.asp">CSS Masking</a>
-                        <a class="oyeeee" href="css3_buttons.asp">CSS Buttons</a>
-                        <a class="oyeeee" href="css3_pagination.asp">CSS Pagination</a>
-                        <a class="oyeeee" href="css3_multiple_columns.asp">CSS Multiple Columns</a>
-                        <a class="oyeeee" href="css3_user_interface.asp">CSS User Interface</a>
-                        <a class="oyeeee" href="css3_variables.asp">CSS Variables</a>
-                        <a class="oyeeee" href="css3_box-sizing.asp">CSS Box Sizing</a>
-                        <a class="oyeeee" href="css3_mediaqueries.asp">CSS Media Queries</a>
-                        <a class="oyeeee" href="css3_mediaqueries_ex.asp">CSS MQ Examples</a>
-                        <a class="oyeeee" href="css3_flexbox.asp">CSS Flexbox</a>
-                        <br>
-                        <h2 class="left"><span class="left_h2">CSS</span> Responsive</h2>
-                        <a class="oyeeee" href="css_rwd_intro.asp">RWD Intro</a>
-                        <a class="oyeeee" href="css_rwd_viewport.asp">RWD Viewport</a>
-                        <a class="oyeeee" href="css_rwd_grid.asp">RWD Grid View</a>
-                        <a class="oyeeee" href="css_rwd_mediaqueries.asp">RWD Media Queries</a>
-                        <a class="oyeeee" href="css_rwd_images.asp">RWD Images</a>
-                        <a class="oyeeee" href="css_rwd_videos.asp">RWD Videos</a>
-                        <a class="oyeeee" href="css_rwd_frameworks.asp">RWD Frameworks</a>
-                        <a class="oyeeee" href="css_rwd_templates.asp">RWD Templates</a>
-                        <br>
-                        <h2 class="left"><span class="left_h2">CSS</span> Grid</h2>
-                        <a class="oyeeee" href="css_grid.asp">Grid Intro</a>
-                        <a class="oyeeee" href="css_grid_container.asp">Grid Container</a>
-                        <a class="oyeeee" href="css_grid_item.asp">Grid Item</a>
-                        <br>
-                        <h2 class="left"><span class="left_h2">CSS</span> SASS</h2>
-                        <a class="oyeeee" href="/sass/default.php">SASS Tutorial</a>
-                        <br>
-                        <h2 class="left"><span class="left_h2">CSS</span> Examples</h2>
-                        <a class="oyeeee" href="css_templates.asp">CSS Templates</a>
-                        <a class="oyeeee" href="css_examples.asp">CSS Examples</a>
-                        <a class="oyeeee" href="css_editor.asp">CSS Editor</a>
-                        <a class="oyeeee" href="css_snippets.asp">CSS Snippets</a>
-                        <a class="oyeeee" href="css_quiz.asp">CSS Quiz</a>
-                        <a class="oyeeee" href="css_exercises.asp">CSS Exercises</a>
-                        <a class="oyeeee" href="css_bootcamp.asp">CSS Bootcamp</a>
-                        <a class="oyeeee" href="css_exam.asp">CSS Certificate</a>
-                        <br>
-                        <h2 class="left"><span class="left_h2">CSS</span> References</h2>
-                        <a class="oyeeee" href="/cssref/default.asp">CSS Reference</a>
-                        <a class="oyeeee" href="/cssref/css_selectors.asp">CSS Selectors</a>
-                        <a class="oyeeee" href="/cssref/css_functions.asp">CSS Functions</a>
-                        <a class="oyeeee" href="/cssref/css_ref_aural.asp">CSS Reference Aural</a>
-                        <a class="oyeeee" href="/cssref/css_websafe_fonts.asp">CSS Web Safe Fonts</a>
-                        <a class="oyeeee" href="/cssref/css_animatable.asp">CSS Animatable</a>
-                        <a class="oyeeee" href="/cssref/css_units.asp">CSS Units</a>
-                        <a class="oyeeee" href="/cssref/css_pxtoemconversion.asp">CSS PX-EM Converter</a>
-                        <a class="oyeeee" href="/cssref/css_colors.asp">CSS Colors</a>
-                        <a class="oyeeee" href="/cssref/css_colors_legal.asp">CSS Color Values</a>
-                        <a class="oyeeee" href="/cssref/css_default_values.asp">CSS Default Values</a>
-                        <a class="oyeeee" href="/cssref/css3_browsersupport.asp">CSS Browser Support</a>
-                        <br><br>
-                <!-- </div> -->
-            <!-- </div> -->
+        <div class="top-icons">
+            <span class="svg-2 svg-ag"> <svg viewBox="0 0 28 28" alt="" fill="black" height="20" width="20">
+                    <path
+                        d="M14 2.042c6.76 0 12 4.952 12 11.64S20.76 25.322 14 25.322a13.091 13.091 0 0 1-3.474-.461.956 .956 0 0 0-.641.047L7.5 25.959a.961.961 0 0 1-1.348-.849l-.065-2.134a.957.957 0 0 0-.322-.684A11.389 11.389 0 0 1 2 13.682C2 6.994 7.24 2.042 14 2.042ZM6.794 17.086a.57.57 0 0 0 .827.758l3.786-2.874a.722.722 0 0 1 .868 0l2.8 2.1a1.8 1.8 0 0 0 2.6-.481l3.525-5.592a.57.57 0 0 0-.827-.758l-3.786 2.874a.722.722 0 0 1-.868 0l-2.8-2.1a1.8 1.8 0 0 0-2.6.481Z">
+                    </path>
+                </svg>
+            </span>
+            <span class="svg-2 svg-again"> <svg viewBox="0 0 28 28" alt="" class="svg-3" fill="currentColor" height="20"
+                    width="20">
+                    <path
+                        d="M7.847 23.488C9.207 23.488 11.443 23.363 14.467 22.806 13.944 24.228 12.581 25.247 10.98 25.247 9.649 25.247 8.483 24.542 7.825 23.488L7.847 23.488ZM24.923 15.73C25.17 17.002 24.278 18.127 22.27 19.076 21.17 19.595 18.724 20.583 14.684 21.369 11.568 21.974 9.285 22.113 7.848 22.113 7.421 22.113 7.068 22.101 6.79 22.085 4.574 21.958 3.324 21.248 3.077 19.976 2.702 18.049 3.295 17.305 4.278 16.073L4.537 15.748C5.2 14.907 5.459 14.081 5.035 11.902 4.086 7.022 6.284 3.687 11.064 2.753 15.846 1.83 19.134 4.096 20.083 8.977 20.506 11.156 21.056 11.824 21.986 12.355L21.986 12.356 22.348 12.561C23.72 13.335 24.548 13.802 24.923 15.73Z">
+                    </path>
+                </svg>
+            </span>
+            <div class="svg-3">
+                <svg aria-label="Your profile" class="svg-last" data-visualcompletion="ignore-dynamic" role="img"
+                    style="height:40px;width:40px">
+                    <mask id=":Rd9dhlad5qq75b5klba:">
+                        <circle class="g" cx="20" cy="20" fill="grey" r="20"></circle>
+                    </mask>
+                    <g mask="url(#:Rd9dhlad5qq75b5klba:)">
+                        <image style="height:40px;width:40px" x="0" y="0" height="100%"
+                            preserveAspectRatio="xMidYMid slice" width="100%"
+                            xlink:href="https://scontent.flhe2-2.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p40x40&amp;_nc_cat=1&amp;ccb=1-7&amp;_nc_sid=7206a8&amp;_nc_eui2=AeECthyp7cW0VPouEdz8xG6Bso2H55p0AlGyjYfnmnQCUQxYVqnp7Q-k5CPgUVqpq1fu2JYeGtCPyooo52Kodv82&amp;_nc_ohc=RgkFrl094HIAX_6RO0Z&amp;_nc_ht=scontent.flhe2-2.fna&amp;oh=00_AfDqb8N7snRVuoWcwzT6D_VZ4d2gpmpASxTLoBha1C0mHQ&amp;oe=64AB02B8">
+                        </image>
+                        <circle class="xbh8q5q x1pwv2dq xvlca1e" cx="5" cy="5" fill="black" r="0"></circle>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <div class="side-bar">
+        <div class="bar" style="margin-bottom: 10px;">
+        <i class="fa-solid fa-house" style="color:var(--color-fill);"></i>
+            <span class="all font">Home</span>
+        </div>
+        <div class="bar">
+            <svg aria-hidden="true" class="left" data-visualcompletion="ignore-dynamic" role="none"
+                style="height:24px;width:24px">
+                <mask id=":R16l6akt9ulad5qq75b5klba:">
+                    <circle cx="12" cy="12" fill="white" r="12"></circle>
+                </mask>
+                <g mask="url(#:R16l6akt9ulad5qq75b5klba:)">
+                    <image style="height:24px;width:24px" x="0" y="0" height="100%" preserveAspectRatio="xMidYMid slice"
+                        width="100%"
+                        xlink:href="https://scontent.flhe2-4.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p40x40&amp;_nc_cat=1&amp;ccb=1-7&amp;_nc_sid=dbb9e7&amp;_nc_eui2=AeECthyp7cW0VPouEdz8xG6Bso2H55p0AlGyjYfnmnQCUQxYVqnp7Q-k5CPgUVqpq1fu2JYeGtCPyooo52Kodv82&amp;_nc_ohc=RgkFrl094HIAX--LZca&amp;_nc_ht=scontent.flhe2-4.fna&amp;oh=00_AfARXd10-HMrCjamj0340vl06ZSb1hk-ecHwhDdLuWJWAw&amp;oe=64ABAB78">
+                    </image>
+                    <circle class="xbh8q5q x1pwv2dq xvlca1e" cx="12" cy="12" r="0"></circle>
+                </g>
+            </svg>
+            <span class="all font">Lorem Ipsum</span>
+        </div>
+        <hr id="break1">
+        <div class="bar"> <a href="https://fdkf-bae56.web.app/" target="_blank" style="text-decoration: none;">
+         <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/pFMzRgJZxnt.png?_nc_eui2=AeEo9NVNYUxvXnRtqvcCcAaSwtEMOoorp1zC0Qw6iiunXKJaOyCqRihIekQ9JhTfHoQGsLgtBEyPIqpLE4pf2trx');background-position:0 -25px;background-size:auto;width:24px;height:24px;background-repeat:no-repeat;display:inline-block;"></i>
+        </a>
+            <span id="link" class="all font"><a href="https://fdkf-bae56.web.app/" target="_blank" style="text-decoration: none;color: black;">Watch</a></span>
+        </div>
+        <div class="bar">
+            <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yg/r/IDuJShpKhav.png?_nc_eui2=AeEGFtiGn4ZEKCojRCVCLUdxoK9i4__oYxegr2Lj_-hjFzxwPVvRLYL6_T-ZCyj5TdTw_FLynAMTw3vtAgDcHBvR');background-position:0 0;background-size:auto;width:24px;height:24px;background-repeat:no-repeat;display:inline-block"></i>
+            <span class="all font">Friends</span>
+        </div>
+        <div class="bar">
+            <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/pFMzRgJZxnt.png?_nc_eui2=AeEo9NVNYUxvXnRtqvcCcAaSwtEMOoorp1zC0Qw6iiunXKJaOyCqRihIekQ9JhTfHoQGsLgtBEyPIqpLE4pf2trx');background-position:0 0;background-size:auto;width:24px;height:24px;background-repeat:no-repeat;display:inline-block"></i>
+            <span class="all font">Marketplace</span>
+        </div>
+            <div class="bar">
+                <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/pFMzRgJZxnt.png?_nc_eui2=AeEo9NVNYUxvXnRtqvcCcAaSwtEMOoorp1zC0Qw6iiunXKJaOyCqRihIekQ9JhTfHoQGsLgtBEyPIqpLE4pf2trx');background-position:0 0;background-size:auto;width:24px;height:24px;background-repeat:no-repeat;display:inline-block"></i>
+                <span class="all font">Gaming</span>
+            </div>
+        <div class="bar">
+            <span class="bg"> <i data-visualcompletion="css-img" class="bg" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/XaWntevIEb5.png?_nc_eui2=AeHv9qdzfBLSaMoLYeNPkoOPijdn5LwWJwuKN2fkvBYnC8tGvMecwSPKU-tsCOJeoaq-KiYhBNDvq1Iuu_Mtpobj');background-position:0 -168px;background-size:auto;width:16px;height:16px;background-repeat:no-repeat;display:inline-block"></i>
+            </span>
+                <span class="all font">See all</span>
+        </div>
+        <hr id="break1">
+        <div class="bar">
+            <span class="bg">  <i data-visualcompletion="css-img" class="bg" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/oVC290p3s3z.png?_nc_eui2=AeH3sZEvRJD5urz-3NH73B4LkpjAXyycuuaSmMBfLJy65nkJFC3e0sCyEyif6ALDjvqZNpDyMrsYHpn9F_1EHDcV');background-position:0 -1230px;background-size:auto;width:16px;height:16px;background-repeat:no-repeat;display:inline-block"></i>
+           </span>
+                <span class="all font">See all groups</span>
+        </div>
+        <hr id="break1">
+        <div class="bar space">
+<span class="bg"><i data-visualcompletion="css-img" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/XaWntevIEb5.png?_nc_eui2=AeHv9qdzfBLSaMoLYeNPkoOPijdn5LwWJwuKN2fkvBYnC8tGvMecwSPKU-tsCOJeoaq-KiYhBNDvq1Iuu_Mtpobj');background-position:0 -185px;background-size:auto;width:16px;height:16px;background-repeat:no-repeat;display:inline-block"></i>
+            </span>
+    <span class="all font">See all shortcuts</span>
+        </div>
+
+        <div class="side-footer">
+
+
+            <a class="size font" href="/privacy/policy/?entry_point=comet_dropdown">Privacy</a>
+            <span class="size" aria-hidden="true"> ·
+            </span>
+            <a class="size font" href="/policies?ref=pf">Terms</a><span class="size font" aria-hidden="true"> · </span>
+
+            <a class="size font" href="/business/">Advertising</a>
+            <span class="size font" aria-hidden="true"> · </span>
+            <a class="size font" href="/help/568137493302217">Ad choices <span>
+                    <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1"
+                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/Z_p9oYVUuFW.png?_nc_eui2=AeGv6BLZryiTnOBa7_Jrb56k0WUly8mT_3DRZSXLyZP_cFwMuw47V4zD388aJJ2SIDDITqqVmK2ohFCIJe6G806f&quot;); background-position: -176px -59px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;">
+                    </i></span></a>
+        </div>
+        <div class="side-footer">
+            <a class="size font" href="/policies/cookies/">Cookies</a><span class="size font" aria-hidden="true"> ·
+            </span><a href="" aria-expanded="false" aria-haspopup="menu" class="size font">More</a><span class="size font"><span
+                class="size font" aria-hidden="true"> · Meta © 2023</span>
         </div>
     </div>
     <main>
-        
-        <div class="whoo">Advertisement</div>
-        <div class="ho">
-            <div class="ret">
-                <div class="ad">Ad</div>
-                <h1 class="io">CSS <span class="color_h1">Tutorial</span></h1>
-                <div class="cle">
-                    <a class="but mm" href="/default.asp">&#10094; Home</a>
-                    <a class="btn mm" href="css_intro.asp">Next &#10095;</a>
-                </div>
-                <div class="intro">
-                    <p class="tg">CSS is the language we use to style an HTML document.</p>
-                    <p class="tg">CSS describes how HTML elements should be displayed.</p>
-                    <p class="tg">This tutorial will teach you CSS from basic to advanced.</p>
-                    <a class="uchihamadara mm" href="css_intro.asp">Start learning CSS now &raquo;</a>
-                </div>
-                <hr id="fg">
-                <h2 class="e3e">Examples in Each Chapter</h2>
-                <p class="r3r">This CSS tutorial contains hundreds of CSS examples.</p>
-                <p class="r3r">With our online editor, you can edit the CSS, and click on a button to view the result.
-                </p>
-                <div class="exam">
-                    <h3 class="yu">CSS Example</h3>
-                    <div class="ih">
-                        <span class="brown">
-                            body</span>
-                        {<br>&nbsp;&nbsp;
-                        <span class="red">background-color</span>:<span class="blue">lightblue;</span><br>}<br>
-                        <br><span class="brown">h1</span>
-                        {<br>
-                        &nbsp;&nbsp;<span class="red">color</span>:<span class="blue">white;</span><br>
-                        &nbsp;&nbsp;<span class="red">text-align</span>:<span class="blue">center;</span><br>
-                        }<br><br>
-                        <span class="brown">p</span>
-                        {<br>
-                        &nbsp;
-                        <span class="red"> font-family</span>:<span class="blue">verdana;</span> <br>
-                        &nbsp;&nbsp;<span class="red">font-size</span>:<span class="blue">20px;</span><br>
-                        }
+        <div class="main-1">
+            <div class="color">
+                <div class="box">
+                    <div class="box-2">
+                        <svg fill="rgb(101, 103, 107)" viewBox="0 0 18 18" width="2em" height="1em"
+                            class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1qx5ct2 xw4jnvo">
+                            <g fill-rule="evenodd" transform="translate(-446 -350)">
+                                <path
+                                    d="M457 368.832a.5.5 0 0 0 .883.323l1.12-1.332a.876.876 0 0 1 .679-.323h3.522a2.793 2.793 0 0 0 2.796-2.784v-10.931a2.793 2.793 0 0 0-2.796-2.785h-3.454a2.75 2.75 0 0 0-2.75 2.75v15.082zm-1.5 0a.5.5 0 0 1-.883.323l-1.12-1.332a.876.876 0 0 0-.679-.323h-3.522a2.793 2.793 0 0 1-2.796-2.784v-10.931a2.793 2.793 0 0 1 2.796-2.785h3.454a2.75 2.75 0 0 1 2.75 2.75v15.082z">
+                                </path>
+                            </g>
+                        </svg>
+                        <span class="text font">Stories</span>
                     </div>
-                    <a target="_blank" href="tryit.asp?filename=trycss_default" class="sec">Try it Yourself &raquo;</a>
+                    <div class="box-2">
+                        <svg fill="rgb(101, 103, 107)" viewBox="0 0 18 18" width="2em" height="1em"
+                            class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1qx5ct2 xw4jnvo">
+                            <g fill-rule="evenodd" transform="translate(-446 -350)">
+                                <path
+                                    d="M454.59 355h4.18l-2.4-4h-3.28c-.22 0-.423.008-.624.017L454.59 355zm6.514 0h3.695c-.226-1.031-.65-1.79-1.326-2.489-1.061-1.025-2.248-1.488-4.392-1.511h-.379l2.401 4zm-8.78 0-1.942-3.64c-.73.247-1.315.63-1.868 1.165-.668.69-1.09 1.445-1.315 2.475h5.125zm7.043 7.989a.711.711 0 0 1-.22.202l-4.573 2.671-.05.027a.713.713 0 0 1-1.024-.643v-5.343l.002-.056a.714.714 0 0 1 1.072-.56l4.572 2.67.054.036a.714.714 0 0 1 .167.996zm-12.366-5.99V363.083l.001.03v.112l.005.048h.001c.05 2.02.513 3.176 1.506 4.203 1.102 1.066 2.324 1.525 4.577 1.525h5.99c2.144-.023 3.331-.486 4.392-1.511 1.005-1.04 1.467-2.198 1.517-4.217h.003c.003-.1.005-.1.006-.204l.001-.156V357h-18z">
+                                </path>
+                            </g>
+                        </svg>
+                        <span class="text font">Reels</span>
+                    </div>
+                    <div class="box-2">
+                        <svg fill="rgb(101, 103, 107)" viewBox="0 0 18 18" width="2em" height="1em"
+                            class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1qx5ct2 xw4jnvo">
+                            <g fill-rule="evenodd" transform="translate(-446 -350)">
+                                <path
+                                    d="M457.25 361H455v2.25a1 1 0 0 1-2 0V361h-2.25a1 1 0 0 1 0-2H453v-2.25a1 1 0 0 1 2 0V359h2.25a1 1 0 0 1 0 2m8.241-5.889a.962.962 0 0 0-.998.063L462 356.938v-1.188a2.754 2.754 0 0 0-2.75-2.75h-10.5a2.754 2.754 0 0 0-2.75 2.75v8.5a2.754 2.754 0 0 0 2.75 2.75h10.5a2.754 2.754 0 0 0 2.75-2.75v-1.188l2.503 1.77a.953.953 0 0 0 .988.057.95.95 0 0 0 .509-.841v-8.096a.95.95 0 0 0-.509-.841">
+                                </path>
+                            </g>
+                        </svg>
+                        <span class="text font">Rooms</span>
+                    </div>
                 </div>
-                <p class="bn"><b id="az">Click on the &quot;Try it Yourself&quot; button to see how it works.</b></p>
-                <hr id="fg">
-                <h2 class="e3e">Use the Menu</h2>
-                <p class="geoo">We recommend reading this tutorial, in the sequence listed in the menu.</p>
-                <p class="geoo">If you have a large screen, the menu will always be present on the left.</p>
-                <p class="geoo">If you have a small screen, open the menu by clicking the top menu sign <span
-                        class="w3-xlarge">&#9776;</span>.</p>
-                <hr id="fg">
+                <hr id="break">
+                <div class="distrib">
+                    <div class="box-3">
+                        <img alt="" class="image" referrerpolicy="origin-when-cross-origin"
+                            src="https://scontent.flhe2-3.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=dst-png_p160x160&amp;_nc_cat=1&amp;ccb=1-7&amp;_nc_sid=7206a8&amp;_nc_eui2=AeECthyp7cW0VPouEdz8xG6Bso2H55p0AlGyjYfnmnQCUQxYVqnp7Q-k5CPgUVqpq1fu2JYeGtCPyooo52Kodv82&amp;_nc_ohc=RgkFrl094HIAX_wcwZZ&amp;_nc_ht=scontent.flhe2-3.fna&amp;oh=00_AfCHIPQtVHyWDOBDUHxq9u7Tfg5_zZsfu_Zwt1YMgI49Tw&amp;oe=64AC8C78">
+                        <svg fill="white" viewBox="0 0 20 20" width="1em" height="1em" class="add">
+                            <g fill-rule="evenodd" transform="translate(-446 -350)">
+                                <g fill-rule="nonzero">
+                                    <path d="M95 201.5h13a1 1 0 1 0 0-2H95a1 1 0 1 0 0 2z"
+                                        transform="translate(354 159.5)">
+                                    </path>
+                                    <path d="M102.5 207v-13a1 1 0 1 0-2 0v13a1 1 0 1 0 2 0z"
+                                        transform="translate(354.5 159.5)"></path>
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="shadow font">Create Story</div>
+                    </div>
+                    <div>
+                        <span class="mid">
+                            <svg fill="currentColor" viewBox="0 0 23 23" width="1.5em" height="1.4em"
+                                class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 xxk0z11 xvy4d1p">
+                                <g fill-rule="evenodd" transform="translate(-444 -204)">
+                                    <g>
+                                        <path
+                                            d="m94.385 20.47-.195.018a1.196 1.196 0 0 1-.882-.28 1.203 1.203 0 0 1-.43-.821L91.504 3.689c-.027-.32.072-.633.281-.882.21-.249.5-.402.82-.43l2.847-.249c.09-.558.286-1.084.58-1.556l-3.556.311a2.691 2.691 0 0 0-1.84.96 2.693 2.693 0 0 0-.626 1.977l1.374 15.697a2.69 2.69 0 0 0 .96 1.84 2.69 2.69 0 0 0 1.977.625l1.112-.097a4.23 4.23 0 0 1-.438-.445 4.272 4.272 0 0 1-.61-.97"
+                                            transform="translate(351.5 157) translate(2.5 48)"></path>
+                                        <path fill-rule="nonzero"
+                                            d="m109.61 22.463-11.603-1.015a2.77 2.77 0 0 1-2.512-2.995L96.882 2.59A2.77 2.77 0 0 1 99.877.08l11.603 1.015a2.77 2.77 0 0 1 2.513 2.994l-1.388 15.862a2.77 2.77 0 0 1-2.994 2.513zm.131-1.494.082.004c.658.014 1.23-.49 1.288-1.154l1.388-15.862a1.27 1.27 0 0 0-1.15-1.37L99.746 1.574a1.27 1.27 0 0 0-1.37 1.15l-1.387 15.86a1.27 1.27 0 0 0 1.15 1.37l11.602 1.016z"
+                                            transform="translate(351.5 157) translate(2.5 48)"></path>
+                                        <path fill-rule="nonzero"
+                                            d="M107.722 55.517c-.513-.58-1.14-.928-1.97-1.002-1.967-.175-3.324 1.196-3.49 3.118-.122 1.428.652 2.987 1.985 4.565.99 1.172 2.212 2.255 2.7 2.299.489.043 1.877-.807 3.053-1.787 1.583-1.319 2.611-2.72 2.734-4.148.162-1.878-.889-3.438-2.774-3.67l-.127-.013c-.83-.074-1.507.157-2.111.638zm-.988 7.09c-.44-.39-.914-.871-1.341-1.377-1.098-1.3-1.716-2.543-1.636-3.468.099-1.15.79-1.848 1.862-1.753.583.052.968.37 1.352 1.035a.75.75 0 0 0 1.224.107c.463-.552.872-.8 1.403-.784l.101.006c1.075.096 1.64.91 1.54 2.061-.079.925-.897 2.039-2.199 3.123a13.584 13.584 0 0 1-1.765 1.244l-.187.104a8.367 8.367 0 0 1-.354-.298z"
+                                            transform="translate(351.5 157)"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="text font">Share everyday moments with friends and family.</span>
+                            <svg fill="currentColor" viewBox="0 0 23 23" width="1.4em" height="1.3em"
+                                class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 xxk0z11 xvy4d1p">
+                                <defs>
+                                    <path d="M0 947.5 222 947.5 222 0 0 0z"></path>
+                                </defs>
+                                <g fill-rule="evenodd" transform="translate(-444 -204)">
+                                    <g transform="translate(354 144)">
+                                        <path fill-rule="nonzero"
+                                            d="M112.5 72.5c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5S96.2 62 102 62s10.5 4.7 10.5 10.5zm-1.5 0a9 9 0 0 0-9-9 9 9 0 0 0-9 9 9 9 0 0 0 9 9 9 9 0 0 0 9-9z">
+                                        </path>
+                                        <path fill-rule="nonzero"
+                                            d="m96.72 68.28 6.5 6.5a.75.75 0 1 0 1.06-1.06l-6.5-6.5a.75.75 0 0 0-1.06 1.06z">
+                                        </path>
+                                        <path
+                                            d="M103.5 72.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m.25-11h-3.5a.752.752 0 0 1-.75-.75c0-.413.338-.75.75-.75h3.5c.412 0 .75.337.75.75s-.338.75-.75.75">
+                                        </path>
+                                        <mask>
+                                            <use xlink:href="#a"></use>
+                                        </mask>
+                                        <path mask="url(#b)" d="M101 63 103 63 103 61 101 61z"></path>
+                                        <path
+                                            d="m111.016 65.96-2.475-2.476a.752.752 0 0 1 0-1.06.752.752 0 0 1 1.06 0l2.475 2.474a.752.752 0 0 1 0 1.061.752.752 0 0 1-1.06 0"
+                                            mask="url(#b)"></path>
+                                        <path mask="url(#b)"
+                                            d="M109.425 66.49 108.01 65.075 109.425 63.661 110.839 65.075z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="text font">Stories disappear after 24 hours.</span>
+                            <svg fill="currentColor" viewBox="0 0 23 23" width="1.4em" height="1.3em"
+                                class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 xxk0z11 xvy4d1p">
+                                <g fill-rule="evenodd" transform="translate(-444 -204)">
+                                    <g>
+                                        <path fill-rule="nonzero"
+                                            d="M96.24 21.659c.034 1.163 1.197 1.909 2.244 1.446l2.133-.942a.107.107 0 0 1 .071-.005c.941.259 1.902.342 3.312.342 6.525 0 11.5-4.725 11.5-11.08 0-6.328-4.946-10.929-11.5-10.929s-11.5 4.6-11.5 10.93c0 3.191 1.255 6.07 3.47 8.129l.156.142c.068.061.103.108.112.093l.002-.01v1.884zM104 1.99c5.75 0 10 3.954 10 9.43 0 5.508-4.287 9.58-10 9.58l-.436-.004-.404-.01c-.84-.03-1.475-.11-2.073-.275a1.606 1.606 0 0 0-1.076.08l-2.134.94c-.067.03-.135-.014-.138-.096v-1.89c-.013-.446-.22-.796-.533-1.098l-.08-.074C95.131 16.79 94 14.26 94 11.42c0-5.475 4.25-9.429 10-9.429z"
+                                            transform="translate(352 204.5)"></path>
+                                        <path
+                                            d="m110.418 9.034-3.14 4.99c-.499.793-1.569.991-2.318.428l-2.496-1.876a.64.64 0 0 0-.773.002l-3.372 2.564c-.45.342-1.038-.197-.737-.676l3.14-4.99a1.602 1.602 0 0 1 2.318-.428l2.496 1.876a.64.64 0 0 0 .773-.002l3.372-2.564c.45-.342 1.038.197.737.676"
+                                            transform="translate(352 204.5)"></path>
+                                    </g>
+                                </g>
+                            </svg>
 
-                <h2 class="e3e">CSS Templates</h2>
-                <p class="geoo">We have created some responsive W3.CSS templates for you to use.</p>
-                <p class="geoo">You are free to modify, save, share, and use them in all your projects.</p>
-                <p class="geoo"><a class="ttt" style="color:black;" href="css_rwd_templates.asp">Free CSS Templates!</a></p>
-                <hr id="fg">
-                <div id="mid">Advertisement<br><br><br><br><br><br><br><br><br><br><br><br></div>
-                <hr id="fg">
-                <h2 class="e3e">CSS Exercises</h2>
-                <form style="background-color:black;" autocomplete="off" id="fom"
-                    action="exercise.asp?filename=exercise_selectors1" method="post" target="_blank">
-                    <div class="exer" style="background-color:white;">
-                        <h2 class="e3e" style="background-color:white;margin-left:15px;">Test Yourself With Exercises</h2>
-                        <h2 class="e3e" style="margin-left:15px;">Exercise:</h2>
-                        <p class="geoo" style="margin-left:15px;">Set the color of all &lt;p&gt; elements to red.</p>
-                        <div class="prec">
-                            <pre>
-&lt;style&gt;
-<input name="ex1" maxlength="1" style="width: 16px;padding: 1px;border: 1px solid transparent;
-height: 1.3em;overflow: visible;font: inherit;margin: 0;"> {
-  <input name="ex2" maxlength="6" style="width: 66px;padding: 1px;border: 1px solid transparent;
-  height: 1.3em;overflow: visible;font: inherit;margin: 0;"> red;
-}
-&lt;/style&gt;
-</pre>
+                            <span class="text font">Replies and reactions are private.</span></span>
+                    </div>
+                    <div class="side">
+                        <div class="side-1">
+                            <svg fill="rgb(101, 103, 107)" viewBox="0 0 21 21" width="1.5em" height="1.3em"
+                                class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p">
+                                <path
+                                    d="M9.209 5.207 16 12l-6.791 6.793a1 1 0 1 0 1.415 1.414l7.5-7.5a1 1 0 0 0 0-1.414l-7.5-7.5a1 1 0 1 0-1.415 1.414z">
+                                </path>
+                            </svg>
                         </div>
-                        <br>
-                        <button type="submit" class="mar">Submit Answer &raquo;</button>
-                        <p class="fvv"><a class="bg" style="color:black;margin-left:15px;" target="_blank"
-                                href="exercise.asp?filename=exercise_selectors1">Start the Exercise</a></p>
+                        </span>
                     </div>
-                </form>
-                <hr id="fg">
-                <h2 class="e3e">CSS Quiz</h2>
-                <p class="geoo">Test your CSS skills with a quiz.</p>
-                <p class="ax"><a class="mb" href="css_quiz.asp">Start CSS Quiz!</a></p>
-                <hr id="fg">
-                <h2 class="e3e">My Learning</h2>
-
-                <p class="geoo">Track your progress with the free "My Learning" program here at W3Schools.</p>
-                <p class="geoo">Log in to your account, and start earning points!</p>
-                <p class="geoo">This is an optional feature. You can study W3Schools without using My Learning.</p>
-
-
-                <h2 class="e3e">CSS References</h2>
-                <p class="geoo">At W3Schools you will find complete CSS references of all properties and selectors with
-                    syntax, examples, browser support, and more.</p>
-                <div class="roe">
-
-                    <div class="irq">
-                        <a class="nq" href="/cssref/default.asp">CSS Properties</a>
-                    </div>
-
-                    <div class="irq">
-                        <a class="nq" href="/cssref/css_selectors.asp">CSS Selectors</a>
-                    </div>
-
-                    <div class="irq">
-                        <a class="nq" href="/cssref/css3_browsersupport.asp">CSS Browser Support</a>
-                    </div>
-
-                    <div class="irq">
-                        <a class="nq" href="/cssref/css_functions.asp">CSS Functions</a>
-                    </div>
-
-                    <div class="irq">
-                        <a class="nq" href="/cssref/css_animatable.asp">CSS Animatable</a>
-                    </div>
-
-                    <div class="irq">
-                        <a class="nq" href="/cssref/css_ref_aural.asp">CSS Aural</a>
-                    </div>
-
-                    <div class="irq">
-                        <a class="nq" href="/cssref/css_websafe_fonts.asp">CSS Web Safe Fonts</a>
-                    </div>
-
-                    <div class="irq">
-                        <a class="nq" href="/cssref/css_units.asp">CSS Units</a>
-                    </div>
-
-                    <div class="irq">
-                        <a class="nq" href="/cssref/css_pxtoemconversion.asp">Px to Em Conversion</a>
-                    </div>
-
-                    <div class="irq">
-                        <a class="nq" href="/cssref/css_colors.asp">CSS Colors</a>
-                    </div>
-
-                    <div class="irq">
-                        <a class="nq" href="/cssref/css_default_values.asp">CSS Default Values</a>
-                    </div>
-
-                    <div class="irq">
-                        <a class="nq" href="/cssref/css_entities.asp">CSS Entities</a>
-                    </div>
-
                 </div>
-                <br>
-
-                <div class="hnj" id="diw">
-
-                    <h2>Kickstart your career</h2>
-                    <p>Get certified by completing <span id="hey">the</span> CSS<span id="epi"></span> course</p>
-                    <a class="gtb" href="https://campus.w3schools.com/collections/course-catalog" target="_blank">Get
-                        certified</a>
-                    <svg id="rro" viewBox="0 0 170 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+            </div>
+            <div class="box-4">
+                <span class="model-1">
+                    <svg aria-label="Your profile" data-visualcompletion="ignore-dynamic" role="img"
+                        style="height:40px;width:50px">
+                        <mask id=":Rd9dhlad5qq75b5klba:">
+                            <circle cx="20" cy="20" fill="grey" r="20"></circle>
+                        </mask>
+                        <g mask="url(#:Rd9dhlad5qq75b5klba:)">
+                            <image style="height:40px;width:40px" x="0" y="0" height="100%"
+                                preserveAspectRatio="xMidYMid slice" width="100%"
+                                xlink:href="https://scontent.flhe2-2.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p40x40&amp;_nc_cat=1&amp;ccb=1-7&amp;_nc_sid=7206a8&amp;_nc_eui2=AeECthyp7cW0VPouEdz8xG6Bso2H55p0AlGyjYfnmnQCUQxYVqnp7Q-k5CPgUVqpq1fu2JYeGtCPyooo52Kodv82&amp;_nc_ohc=RgkFrl094HIAX_6RO0Z&amp;_nc_ht=scontent.flhe2-2.fna&amp;oh=00_AfDqb8N7snRVuoWcwzT6D_VZ4d2gpmpASxTLoBha1C0mHQ&amp;oe=64AB02B8">
+                            </image>
+                            <circle class="xbh8q5q x1pwv2dq xvlca1e" cx="5" cy="5" fill="black" r="0"></circle>
+                        </g>
+                    </svg>
+                    <input class="input-2 bg-grey" type="text" placeholder="What's on your mind, Lorem?"></input>
+                </span>
+                <hr id="break">
+                <div class="box">
+                    <div class="box-2">
+                        <img style="margin-right: 5px;" height="24" width="24" alt=""
+                            referrerpolicy="origin-when-cross-origin"
+                            src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/c0dWho49-X3.png?_nc_eui2=AeHpAQZmyIsZgO-7gfL7SSXUVnUPE18ZZ-dWdQ8TXxln54wgvoLzpLcRkINjMa6aXumNJ859-3wKJNXur2EtcTQ_">
+                        <span class="text font" style="font-size: 15px;font-weight: bold;">Live video</span>
+                    </div>
+                    <div class="box-2">
+                        <img style="margin-right: 5px;" height="24" width="24" alt=""
+                            referrerpolicy="origin-when-cross-origin"
+                            src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/Ivw7nhRtXyo.png?_nc_eui2=AeHkBwvlbN0QJeqEK0yyBf1tPL4YoeGsw5I8vhih4azDkuJ_Ji1kpCc2RUAOwu3t3IpHCAMVvwse2DWlvha1F_YY">
+                        <span class="text font" style="font-size: 15px;font-weight: bold;">Photo/video</span>
+                    </div>
+                    <div class="box-2">
+                        <img style="margin-right: 5px;" height="24" width="24" alt=""
+                            referrerpolicy="origin-when-cross-origin"
+                            src="https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y4mYLVOhTwq.png?_nc_eui2=AeEgkEUWz2p3T3cbRuUB6MxqvPIN-OmHLJy88g346YcsnCnBdSMj89m2gtOuKuTXkfYpwEDumgT2utwEp0l4-JjT">
+                        <span class="text font" style="font-size: 15px;font-weight: bold;">Feeling/activity</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box-5">
+                <svg class="desc-4" fill="rgb(101, 103, 107)" viewBox="0 0 20 20" width="1em" height="1em"
+                    class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1qx5ct2 xw4jnvo">
+                    <g fill-rule="evenodd" transform="translate(-446 -350)">
                         <path
-                            d="M9.7747 42.7064C9.7747 42.7064 19.5575 77.2951 44.4558 84.8113C62.0225 90.1142 81.0061 80.1196 77.791 68.3309C76.0904 62.0955 69.0574 62.4735 65.5106 65.8444C59.1003 71.9368 67.8591 89.7423 77.9205 96.1324C112.816 118.295 161.943 84.5867 161.943 84.5867"
-                            stroke="white" stroke-width="2" stroke-linecap="round" />
-                        <path d="M159.804 93.8429L162.704 84.4917L152.715 80.8293" stroke="white" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
+                            d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0">
+                        </path>
+                    </g>
+                </svg>
+
+                <div class="desc">
+
+                    <svg aria-label="Your profile" class="svg-3" data-visualcompletion="ignore-dynamic" role="img"
+                        style="height:40px;width:40px">
+                        <mask>
+                            <circle cx="20" cy="20" fill="grey" r="20"></circle>
+                        </mask>
+                        <g mask="url(#:Rd9dhlad5qq75b5klba:)">
+                            <image style="height:40px;width:40px" x="0" y="0" height="100%"
+                                preserveAspectRatio="xMidYMid slice" width="100%"
+                                xlink:href="https://scontent.flhe2-2.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p40x40&amp;_nc_cat=1&amp;ccb=1-7&amp;_nc_sid=7206a8&amp;_nc_eui2=AeECthyp7cW0VPouEdz8xG6Bso2H55p0AlGyjYfnmnQCUQxYVqnp7Q-k5CPgUVqpq1fu2JYeGtCPyooo52Kodv82&amp;_nc_ohc=RgkFrl094HIAX_6RO0Z&amp;_nc_ht=scontent.flhe2-2.fna&amp;oh=00_AfDqb8N7snRVuoWcwzT6D_VZ4d2gpmpASxTLoBha1C0mHQ&amp;oe=64AB02B8">
+                            </image>
+                            <circle class="x" cx="5" cy="5" fill="black" r="0"></circle>
+                        </g>
                     </svg>
-                    <svg id="ade" data-name="ade" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
-                        <defs>
-                            <style>
-                                .cls-1 {
-                                    fill: #04aa6b;
-                                }
-
-                                .cls-2 {
-                                    font-size: 23px;
-                                }
-
-                                .cls-2,
-                                .cls-3,
-                                .cls-4 {
-                                    fill: #fff;
-                                }
-
-                                .cls-2,
-                                .cls-3 {
-                                    font-family: RobotoMono-Medium, Roboto Mono;
-                                    font-weight: 500;
-                                }
-
-                                .cls-3 {
-                                    font-size: 20.08px;
-                                }
-                            </style>
-                        </defs>
-                        <circle class="cls-1" cx="150" cy="150" r="146.47"
-                            transform="translate(-62.13 150) rotate(-45)" /><text class="cls-2"
-                            transform="translate(93.54 63.89) rotate(-29.5)">w</text><text class="cls-2"
-                            transform="translate(107.13 56.35) rotate(-20.8)">3</text><text class="cls-2"
-                            transform="matrix(0.98, -0.21, 0.21, 0.98, 121.68, 50.97)">s</text><text class="cls-2"
-                            transform="translate(136.89 47.84) rotate(-3.47)">c</text><text class="cls-2"
-                            transform="translate(152.39 47.03) rotate(5.12)">h</text><text class="cls-2"
-                            transform="translate(167.85 48.54) rotate(13.72)">o</text><text class="cls-2"
-                            transform="translate(182.89 52.35) rotate(22.34)">o</text><text class="cls-2"
-                            transform="matrix(0.86, 0.52, -0.52, 0.86, 197.18, 58.36)">l</text><text class="cls-2"
-                            transform="matrix(0.77, 0.64, -0.64, 0.77, 210.4, 66.46)">s</text><text class="cls-3"
-                            transform="translate(35.51 186.66) rotate(69.37)"> </text><text class="cls-3"
-                            transform="matrix(0.47, 0.88, -0.88, 0.47, 41.27, 201.28)">C</text><text class="cls-3"
-                            transform="matrix(0.58, 0.81, -0.81, 0.58, 48.91, 215.03)">E</text><text class="cls-3"
-                            transform="matrix(0.67, 0.74, -0.74, 0.67, 58.13, 227.36)">R</text><text class="cls-3"
-                            transform="translate(69.16 238.92) rotate(39.44)">T</text><text class="cls-3"
-                            transform="matrix(0.85, 0.53, -0.53, 0.85, 81.47, 248.73)">I</text><text class="cls-3"
-                            transform="translate(94.94 256.83) rotate(24.36)">F</text><text class="cls-3"
-                            transform="translate(109.34 263.09) rotate(16.83)">I</text><text class="cls-3"
-                            transform="translate(124.46 267.41) rotate(9.34)">E</text><text class="cls-3"
-                            transform="translate(139.99 269.73) rotate(1.88)">D</text><text class="cls-3"
-                            transform="translate(155.7 270.01) rotate(-5.58)"> </text><text class="cls-3"
-                            transform="translate(171.32 268.24) rotate(-13.06)"> </text><text class="cls-2"
-                            transform="translate(187.55 266.81) rotate(-21.04)">.</text><text class="cls-3"
-                            transform="translate(203.27 257.7) rotate(-29.24)"> </text><text class="cls-3"
-                            transform="translate(216.84 249.83) rotate(-36.75)"> </text><text class="cls-3"
-                            transform="translate(229.26 240.26) rotate(-44.15)">2</text><text class="cls-3"
-                            transform="translate(240.39 229.13) rotate(-51.62)">0</text><text class="cls-3"
-                            transform="translate(249.97 216.63) rotate(-59.17)">2</text><text class="cls-3"
-                            transform="matrix(0.4, -0.92, 0.92, 0.4, 257.81, 203.04)">3</text>
-                        <path class="cls-4"
-                            d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z" />
-                        <path class="cls-4"
-                            d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z" />
-                    </svg>
-
+                    <div class="desc-1 font"><span class="box-6">Lorem Ipsum</span>
+                        <div class="desc-2 bg-grey">Sponsored<span> . </span>
+                            <svg class="desc-3" fill="rgb(101, 103, 107)" viewBox="0 0 16 16" width="1em" height="1em"
+                                class="k" title="Shared with Public">
+                                <title>Shared with Public</title>
+                                <g fill-rule="evenodd" transform="translate(-448 -544)">
+                                    <g>
+                                        <path
+                                            d="M109.5 408.5c0 3.23-2.04 5.983-4.903 7.036l.07-.036c1.167-1 1.814-2.967 2-3.834.214-1 .303-1.3-.5-1.96-.31-.253-.677-.196-1.04-.476-.246-.19-.356-.59-.606-.73-.594-.337-1.107.11-1.954.223a2.666 2.666 0 0 1-1.15-.123c-.007 0-.007 0-.013-.004l-.083-.03c-.164-.082-.077-.206.006-.36h-.006c.086-.17.086-.376-.05-.529-.19-.214-.54-.214-.804-.224-.106-.003-.21 0-.313.004l-.003-.004c-.04 0-.084.004-.124.004h-.037c-.323.007-.666-.034-.893-.314-.263-.353-.29-.733.097-1.09.28-.26.863-.8 1.807-.22.603.37 1.166.667 1.666.5.33-.11.48-.303.094-.87a1.128 1.128 0 0 1-.214-.73c.067-.776.687-.84 1.164-1.2.466-.356.68-.943.546-1.457-.106-.413-.51-.873-1.28-1.01a7.49 7.49 0 0 1 6.524 7.434"
+                                            transform="translate(354 143.5)"></path>
+                                        <path
+                                            d="M104.107 415.696A7.498 7.498 0 0 1 94.5 408.5a7.48 7.48 0 0 1 3.407-6.283 5.474 5.474 0 0 0-1.653 2.334c-.753 2.217-.217 4.075 2.29 4.075.833 0 1.4.561 1.333 2.375-.013.403.52 1.78 2.45 1.89.7.04 1.184 1.053 1.33 1.74.06.29.127.65.257.97a.174.174 0 0 0 .193.096"
+                                            transform="translate(354 143.5)"></path>
+                                        <path fill-rule="nonzero"
+                                            d="M110 408.5a8 8 0 1 1-16 0 8 8 0 0 1 16 0zm-1 0a7 7 0 1 0-14 0 7 7 0 0 0 14 0z"
+                                            transform="translate(354 143.5)"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-
-                <br>
-                <div class="pl">
-                    <a class="xf" href="/default.asp">&#10094; Home</a>
-                    <a class="rs" href="/default.asp">Log in to track progress</a>
-                    <a class="xf exf" href="css_intro.asp">Next &#10095;</a>
+                <img src="https://source.unsplash.com/fptMJJWG2is" class="fb-image">
+                <div class="emoji">
+                    <span> <img class="x16dsc37" height="18" role="presentation"
+                            src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                            width="18">
+                        <span>25K</span></span>
+                    <span>1.2K</span>
                 </div>
-                <br>
-                <hr id="fg">
-            </div>
-        </div>
-        <div class="la">
-            <div id="mid">Advertisement<br><br><br><br><br><br><br><br><br></div>
-            <br><br>
-            <hr id="fg">
-            <div class="fvd">
-
-                <div class="gjk">
-                    <a class="vr" href="/spaces/index.html">Spaces</a>
-                </div>
-
-                <div class="gjk">
-                    <a class="vr" href="/pro/index.php">Upgrade</a>
-                </div>
-
-                <div class="gjk">
-                    <a class="vr" href="https://campus.w3schools.com/pages/newsletter">Newsletter</a>
-                </div>
-
-                <div class="gjk">
-                    <a class="vr" href="https://campus.w3schools.com/collections/certifications">Get Certified</a>
-                </div>
-
-                <div class="gjk">
-                    <a class="vr" href="javascript:void(0);">Report Error</a>
-                </div>
-
-
-            </div><br>
-            <hr id="fg">
-        
-            <div class="pol">
-                <div>
-                <div class="garamanday">
-                <h5 class="cp" style="font-family: 'Source Sans Pro', sans-serif;">Top Tutorials</h5>
-                <a href="/html/default.asp" class="edf">HTML Tutorial</a><br>
-                <a href="/css/default.asp" class="edf">CSS Tutorial</a><br>
-                <a href="/js/default.asp" class="edf">JavaScript Tutorial</a><br>
-                <a href="/howto/default.asp" class="edf">How To Tutorial</a><br>
-                <a href="/sql/default.asp" class="edf">SQL Tutorial</a><br>
-                <a href="/python/default.asp" class="edf">Python Tutorial</a><br>
-                <a href="/w3css/default.asp" class="edf">W3.CSS Tutorial</a><br>
-                <a href="/bootstrap/bootstrap_ver.asp" class="edf">Bootstrap Tutorial</a><br>
-                <a href="/php/default.asp" class="edf">PHP Tutorial</a><br>
-                <a href="/java/default.asp" class="edf">Java Tutorial</a><br>
-                <a href="/cpp/default.asp" class="edf">C++ Tutorial</a><br>
-                <a href="/jquery/default.asp" class="edf">jQuery Tutorial</a><br>
-                </div>
-                </div>
-            <div>
-
-                <div class="garamanday">
-                <h5 class="cp" style="font-family: 'Source Sans Pro', sans-serif;">Top References</h5>
-                <a href="/tags/default.asp" class="edf">HTML Reference</a><br>
-                <a href="/cssref/index.php" class="edf">CSS Reference</a><br>
-                <a href="/jsref/default.asp" class="edf">JavaScript Reference</a><br>
-                <a href="/sql/sql_ref_keywords.asp" class="edf">SQL Reference</a><br>
-                <a href="/python/python_reference.asp" class="edf">Python Reference</a><br>
-                <a href="/w3css/w3css_references.asp" class="edf">W3.CSS Reference</a><br>
-                <a href="/bootstrap/bootstrap_ref_all_classes.asp" class="edf">Bootstrap Reference</a><br>
-                <a href="/php/php_ref_overview.asp" class="edf">PHP Reference</a><br>
-                <a href="/colors/colors_names.asp" class="edf">HTML Colors</a><br>
-                <a href="/java/java_ref_keywords.asp" class="edf">Java Reference</a><br>
-                <a href="/angular/angular_ref_directives.asp" class="edf">Angular Reference</a><br>
-                <a href="/jquery/jquery_ref_overview.asp" class="edf">jQuery Reference</a><br>
-                </div>
-            </div>
-        <div>
-                
-                <div class="garamanday">
-               <br> <h5 class="cp" style="font-family: 'Source Sans Pro', sans-serif;">Top Examples</h5>
-                <a href="/html/html_examples.asp" class="edf">HTML Examples</a><br>
-                <a href="/css/css_examples.asp" class="edf">CSS Examples</a><br>
-                <a href="/js/js_examples.asp" class="edf">JavaScript Examples</a><br>
-                <a href="/howto/default.asp" class="edf">How To Examples</a><br>
-                <a href="/sql/sql_examples.asp" class="edf">SQL Examples</a><br>
-                <a href="/python/python_examples.asp" class="edf">Python Examples</a><br>
-                <a href="/w3css/w3css_examples.asp" class="edf">W3.CSS Examples</a><br>
-                <a href="/bootstrap/bootstrap_examples.asp" class="edf">Bootstrap Examples</a><br>
-                <a href="/php/php_examples.asp" class="edf">PHP Examples</a><br>
-                <a href="/java/java_examples.asp" class="edf">Java Examples</a><br>
-                <a href="/xml/xml_examples.asp" class="edf">XML Examples</a><br>
-                <a href="/jquery/jquery_examples.asp" class="edf">jQuery Examples</a><br>
-                </div>
-            </div>
-        <div>
-            
-                <div class="garamanday">   
-               <br> <h5 class="cp" style="font-family: 'Source Sans Pro', sans-serif;">Get Certified</h5>
-                <a href="https://campus.w3schools.com/collections/certifications/products/html-certificate" target="_blank" class="edf">HTML Certificate</a><br>
-                <a href="https://campus.w3schools.com/collections/certifications/products/css-certificate" target="_blank" class="edf">CSS Certificate</a><br>
-                <a href="https://campus.w3schools.com/collections/certifications/products/javascript-certificate" target="_blank" class="edf">JavaScript Certificate</a><br>
-                <a href="https://campus.w3schools.com/collections/certifications/products/front-end-certificate" target="_blank" class="edf">Front End Certificate</a><br>
-                <a href="https://campus.w3schools.com/collections/certifications/products/sql-certificate" target="_blank" class="edf">SQL Certificate</a><br>
-                <a href="https://campus.w3schools.com/collections/certifications/products/python-certificate" target="_blank" class="edf">Python Certificate</a><br>
-                <a href="https://campus.w3schools.com/collections/certifications/products/php-certificate" target="_blank" class="edf">PHP Certificate</a><br>
-                <a href="https://campus.w3schools.com/collections/certifications/products/jquery-certificate" target="_blank" class="edf">jQuery Certificate</a><br>
-                <a href="https://campus.w3schools.com/collections/certifications/products/java-certificate" target="_blank" class="edf">Java Certificate</a><br>
-                <a href="https://campus.w3schools.com/collections/certifications/products/c-certificate" target="_blank" class="edf">C++ Certificate</a><br>
-                <a href="https://campus.w3schools.com/collections/certifications/products/c-certificate-1" target="_blank" class="edf">C# Certificate</a><br>
-                <a href="https://campus.w3schools.com/collections/certifications/products/xml-certificate" target="_blank" class="edf">XML Certificate</a><br>
+                <hr id="break">
+                <div class="box">
+                    <div class="box-2">
+                        <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1"
+                            style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yH/r/kci9wwejIr9.png?_nc_eui2=AeGba7CN_TjjYA9J7WIoUdSEbwGuJEc3_EJvAa4kRzf8Qnuq3DK3-S12T5AmKANCng88uScRY3jwScGNQ7L1Tgea');background-position:0 -389px;background-size:auto;width:18px;height:18px;background-repeat:no-repeat;display:inline-block;margin-right:5px;"></i>
+                        <span class="text font">Like</span>
+                    </div>
+                    <div class="box-2">
+                        <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1"
+                            style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yH/r/kci9wwejIr9.png?_nc_eui2=AeGba7CN_TjjYA9J7WIoUdSEbwGuJEc3_EJvAa4kRzf8Qnuq3DK3-S12T5AmKANCng88uScRY3jwScGNQ7L1Tgea');background-position:0 -351px;background-size:auto;width:18px;height:18px;background-repeat:no-repeat;display:inline-block;margin-right:5px;"></i>
+                        <span class="text font">Comment</span>
+                    </div>
+                    <div class="box-2">
+                        <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1"
+                            style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yH/r/kci9wwejIr9.png?_nc_eui2=AeGba7CN_TjjYA9J7WIoUdSEbwGuJEc3_EJvAa4kRzf8Qnuq3DK3-S12T5AmKANCng88uScRY3jwScGNQ7L1Tgea');background-position:0 -408px;background-size:auto;width:18px;height:18px;background-repeat:no-repeat;display:inline-block;margin-right:5px;"></i>
+                        <span class="text font">Share</span>
+                    </div>
                 </div>
             </div>
         </div>
-           
-        <hr id="fg">
-<div class="cre" style="font-size:12px;text-align:right;margin-bottom:16px;margin-right:18px;">
-            <a href="/forum/default.asp" target="_blank" class="r4r" style="text-decoration:none;color: black;  opacity: 0.60;" title="Forum">FORUM</a> |
-    <a href="/about/default.asp" target="_top" class="r4r" style="text-decoration:none;color: black;  opacity: 0.60;" title="About W3Schools">ABOUT</a>
-
-    <div class="lst">
-        W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning.
-        Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.
-        While using W3Schools, you agree to have read and accepted our <a href="/about/about_copyright.asp" class="edf">terms of use</a>, 
-        <a href="/about/about_privacy.asp" class="edf">cookie and privacy policy</a>.<br><br>
-        <a href="/about/about_copyright.asp" class="edf">Copyright 1999-2023</a> by Refsnes Data. All Rights Reserved.<br>
-        <a href="//www.w3schools.com/w3css/default.asp" class="edf">W3Schools is Powered by W3.CSS</a>.<br>
-        <a href="https://www.w3schools.com" class="i" title="Home">
-            <svg class="b" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
-                clip-rule="evenodd" viewBox="0 0 512 481.59">
-                <path class="ee" fill="#04AA6D" fill-rule="nonzero"
-                    d="M431.53 101.35s12.9 13.83 30.92 13.83c14.23 0 24.57-8.6 24.57-20.38 0-14.43-13.21-21.09-29.18-21.09h-9.42l-5.63-12.69 24.98-29.59c5.33-6.35 9.83-10.34 9.83-10.34s-3.99.21-12.08.21h-40.64V0h83.23v15.56l-33.38 38.6C493.57 56.82 512 70.23 512 93.88c0 23.24-17.61 44.74-48.02 44.74-28.97 0-45.04-18.22-45.04-18.22l12.59-19.05zM1.13 458.56H17.2c0 4.7 4.1 9.21 11.36 9.21 6.76 0 11.27-3.38 11.27-7.88 0-3.89-2.97-5.63-8.09-6.76l-9.22-2.36c-15.56-4.09-19.55-12.38-19.55-21.19 0-10.75 10.65-20.58 25.7-20.58 12.28 0 26.21 6.25 26 21.61H38.39c0-4.71-4.3-7.68-9.21-7.68-5.33 0-9.01 3.07-9.01 7.37 0 3.58 3.38 5.63 7.37 6.55l11.06 2.97c15.56 3.99 18.32 13.72 18.32 20.07 0 14.02-14.02 21.7-28.05 21.7-13.61 0-27.44-8.29-27.74-23.03zm453.03 0h16.07c0 4.7 4.1 9.21 11.36 9.21 6.76 0 11.27-3.38 11.27-7.88 0-3.89-2.97-5.63-8.09-6.76l-9.22-2.36c-15.56-4.09-19.55-12.38-19.55-21.19 0-10.75 10.65-20.58 25.7-20.58 12.28 0 26.2 6.25 26 21.61h-16.38c0-4.71-4.3-7.68-9.22-7.68-5.32 0-9 3.07-9 7.37 0 3.58 3.38 5.63 7.37 6.55l11.05 2.97c15.57 3.99 18.33 13.72 18.33 20.07 0 14.02-14.02 21.7-28.05 21.7-13.62 0-27.34-8.29-27.64-23.03zm-35.94 21.29V373.17h17.2v106.68h-17.2zm-92.55-34.6c0-21.91 16.99-36.25 36.65-36.25s36.86 14.34 36.86 36.25-17.2 36.34-36.86 36.34c-19.55 0-36.65-14.43-36.65-36.34zm56.21 0c0-11.88-8.91-20.28-19.56-20.28-10.65 0-19.35 8.4-19.35 20.28 0 12.08 8.7 20.37 19.35 20.37 10.75 0 19.56-8.29 19.56-20.37zm-144.36 0c0-21.91 17-36.25 36.65-36.25 19.66 0 36.86 14.34 36.86 36.25s-17.2 36.34-36.86 36.34c-19.65 0-36.65-14.43-36.65-36.34zm56.21 0c0-11.88-8.91-20.28-19.56-20.28-10.65 0-19.35 8.4-19.35 20.28 0 12.08 8.7 20.37 19.35 20.37 10.65 0 19.56-8.29 19.56-20.37zm-74.23-4.2v38.7h-17.2v-37.47c0-11.06-6.65-17-14.33-17-7.88 0-17.61 4.61-17.61 18.02v36.55h-17.2V373.17h17.3v48.02c3.38-8.4 14.54-12.29 21.4-12.29 17.81.1 27.64 12.08 27.64 32.15zm-148.34 4.2c0-21.91 17.6-36.25 37.57-36.25 11.98 0 21.7 5.33 28.05 13.31l-12.08 9.63c-3.58-4.3-9.42-6.97-15.66-6.97-11.98 0-20.58 8.6-20.58 20.28 0 11.56 8.6 20.37 20.58 20.37 6.24 0 12.08-2.66 15.66-6.96l12.08 9.62c-6.35 7.99-16.07 13.31-28.05 13.31-19.97 0-37.57-14.43-37.57-36.34zm198-315.12 109.95 195.75 54.26-96.75-103.81-184.8H208.75l-50.06 89.17-50.06-89.17H0l158.07 281.55.62-1.03.61 1.03 109.86-195.75z" />
-            </svg></a>
+     </main>
+     <div class="last font" style="margin-right: 5px;">
+        <div class="last-1">Sponsored</div>
+        <div style="display: flex;">
+        <span><img alt="" class="img-last" referrerpolicy="origin-when-cross-origin" src="https://scontent.flhe2-4.fna.fbcdn.net/v/t45.1600-4/343303941_6353923814528_6344232207442843075_n.png?stp=dst-png_p476x249&amp;_nc_cat=1&amp;ccb=1-7&amp;_nc_sid=eac8f0&amp;_nc_eui2=AeEHltdpnq2PSoQsmI-01ZyRpXKGAwfYnG-lcoYDB9icbyl_GNP91l_4S1WrbXSRoWahhC2CSsgqTkpuBUcFOvU9&amp;_nc_ohc=m8SfjwHypzQAX_SY2xA&amp;_nc_ht=scontent.flhe2-4.fna&amp;oh=00_AfDf-mQqdNG18enKIMExY2Waol0mp4Zdj7IpUQWuCjqUaA&amp;oe=6490E416">
+         </span>
+            <div style="width:155px; margin-left: 15px;margin-top: 14px;font-size: 14px;font-weight:bold;white-space: nowrap;">A new tool for your<br>Mac<br><span style="color: rgb(101, 103, 107);font-size: 12px;font-weight: none;">mactools.com</span></div></div>
+            <div class="last-1" style="margin-top: 15px;white-space: nowrap;">Group Conversations</div>
+        <div style="margin-top: 13px;display: flex;align-items: center;">
+           <span> <svg fill="black" viewBox="0 0 30 30" width="1em" height="1em" class="bg">
+                <g fill-rule="evenodd" transform="translate(-455 -350)">
+                    <g fill-rule="nonzero">
+                        <path d="M95 201.5h13a1 1 0 1 0 0-2H95a1 1 0 1 0 0 2z"
+                            transform="translate(368 165)">
+                        </path>
+                        <path d="M102.5 207v-13a1 1 0 1 0-2 0v13a1 1 0 1 0 2 0z"
+                            transform="translate(368 165)"></path>
+                    </g>
+                </g>
+            </svg></span>
+            <span style="font-size: 0.9375rem;margin-left: 10px;font-weight:bold;white-space: nowrap;">Create New Group</span>
         </div>
-    </main>
-
+        </div>
+    </div>
 </body>
+</html> 
